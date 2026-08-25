@@ -1,0 +1,27 @@
+# OS / 에디터
+.DS_Store
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv_vad/
+
+# 원본 오디오 데이터셋 (AI Hub 라이선스상 재배포 대상 아님 + 용량 20GB+)
+4차년도/
+5차년도_2차/
+샘플/
+4차년도.csv
+5차년도_2차.csv
+
+# 초기 탐색 단계(파형 유사도 비교) 산출물 - 파일당 최대 2GB, 이후 단계에서 폐기됨
+output/similarity/
+
+# 오래된(텍스트 feature 포함) 실험 모델 - 현재 최신 모델(음향 feature만)로 대체됨
+output/model/*_with_text.joblib
+output/model/feature_names_with_text.json
+output/model/feature_names_majority_vote_with_text.json
+
+# 실행 로그
+*.log
