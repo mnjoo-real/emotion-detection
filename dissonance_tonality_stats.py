@@ -64,6 +64,14 @@ SOURCES = {
             "duration_pitch_corr",
         ],
     },
+    "speaker_norm": {
+        "path": os.path.join(BASE_DIR, "output", "speaker_norm", "per_file_speaker_norm.csv"),
+        "features": [
+            "f2_f1_ratio", "f3_f2_ratio", "f4_f3_ratio",
+            "formant_roughness_gender_z",
+            "pitch_mean_gender_z", "pitch_std_gender_z", "pitch_median_gender_z",
+        ],
+    },
 }
 
 

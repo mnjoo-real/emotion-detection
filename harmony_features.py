@@ -98,7 +98,7 @@ def levinson_durbin(r: np.ndarray, order: int):
     return a, e
 
 
-def extract_formants_from_frame(frame: np.ndarray, sr: int) -> list:
+def extract_formants_from_frame(frame: np.ndarray, sr: int, return_bandwidth: bool = False) -> list:
     windowed = frame * np.hamming(len(frame))
     pre = np.append(windowed[0], windowed[1:] - 0.97 * windowed[:-1])
 
@@ -116,11 +116,14 @@ def extract_formants_from_frame(frame: np.ndarray, sr: int) -> list:
     bandwidths = -0.5 * (sr / np.pi) * np.log(np.abs(roots).clip(1e-6, None))
 
     formants = [
-        f for f, bw in zip(freqs, bandwidths)
+        (f, bw) for f, bw in zip(freqs, bandwidths)
         if FORMANT_FREQ_MIN < f < sr / 2 - 100 and bw < FORMANT_BANDWIDTH_MAX
     ]
-    formants.sort()
-    return formants[:MAX_FORMANTS]
+    formants.sort(key=lambda fb: fb[0])
+    formants = formants[:MAX_FORMANTS]
+    if return_bandwidth:
+        return formants
+    return [f for f, _ in formants]
 
 
 def compute_formant_features(waveform: np.ndarray, orig_sr: int) -> dict:

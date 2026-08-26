@@ -35,6 +35,12 @@ MELODIC_CSV = os.path.join(BASE_DIR, "output", "melodic_profile", "per_file_melo
 ROUGHNESS_CSV = os.path.join(BASE_DIR, "output", "partial_roughness", "per_file_partial_roughness.csv")
 TONALITY_CSV = os.path.join(BASE_DIR, "output", "tonality", "per_file_tonality.csv")
 MELODY_RHYTHM_CSV = os.path.join(BASE_DIR, "output", "melody_rhythm", "per_file_melody_rhythm.csv")
+SPEAKER_NORM_CSV = os.path.join(BASE_DIR, "output", "speaker_norm", "per_file_speaker_norm.csv")
+VAD_CSV = os.path.join(BASE_DIR, "output", "vad", "per_file_vad.csv")
+PAUSE_CSV = os.path.join(BASE_DIR, "output", "pause", "per_file_pause.csv")
+SPECTRAL_DYNAMICS_CSV = os.path.join(BASE_DIR, "output", "spectral_dynamics", "per_file_spectral_dynamics.csv")
+FORMANT_BANDWIDTH_CSV = os.path.join(BASE_DIR, "output", "formant_bandwidth", "per_file_formant_bandwidth.csv")
+VOICE_QUALITY_CSV = os.path.join(BASE_DIR, "output", "voice_quality", "per_file_voice_quality.csv")
 TEXT_CSV = os.path.join(BASE_DIR, "output", "text_features", "per_file_text_features.csv")
 RAW_CSVS = [
     (os.path.join(BASE_DIR, "4차년도.csv"), "cp949"),
@@ -43,9 +49,9 @@ RAW_CSVS = [
 
 MODEL_DIR = os.path.join(BASE_DIR, "output", "model")
 
-# key_mode(major/minor)는 key_major_corr/key_minor_corr/key_major_minor_diff로 이미
-# 수치화되어 있어서 범주형 그대로는 피처에서 제외한다.
-NON_FEATURE_COLS = {"wav_id", "situation", "key_mode"}
+# key_mode(major/minor)는 key_major_corr/key_minor_corr/key_major_minor_diff로,
+# gender는 각 gender_z 피처로 이미 수치화되어 있어서 범주형 원본은 제외한다.
+NON_FEATURE_COLS = {"wav_id", "situation", "key_mode", "gender"}
 
 # 상황(시나리오 라벨) 표기를 평가자 감정 라벨 표기와 통일하기 위한 별칭.
 LABEL_ALIASES = {"anger": "angry", "sad": "sadness"}
@@ -92,6 +98,12 @@ def load_combined_features(
     roughness_csv: str = ROUGHNESS_CSV,
     tonality_csv: str = TONALITY_CSV,
     melody_rhythm_csv: str = MELODY_RHYTHM_CSV,
+    speaker_norm_csv: str = SPEAKER_NORM_CSV,
+    vad_csv: str = VAD_CSV,
+    pause_csv: str = PAUSE_CSV,
+    spectral_dynamics_csv: str = SPECTRAL_DYNAMICS_CSV,
+    formant_bandwidth_csv: str = FORMANT_BANDWIDTH_CSV,
+    voice_quality_csv: str = VOICE_QUALITY_CSV,
     text_csv: str = None,
     label_override: dict = None,
 ):
@@ -110,6 +122,12 @@ def load_combined_features(
         "d": _load_csv(roughness_csv),
         "f": _load_csv(tonality_csv),
         "g": _load_csv(melody_rhythm_csv),
+        "h": _load_csv(speaker_norm_csv),
+        "i": _load_csv(vad_csv),
+        "j": _load_csv(pause_csv),
+        "k": _load_csv(spectral_dynamics_csv),
+        "l": _load_csv(formant_bandwidth_csv),
+        "m": _load_csv(voice_quality_csv),
     }
     if text_csv is not None:
         sources["e"] = _load_csv(text_csv)

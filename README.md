@@ -6,18 +6,18 @@ AI Hub "감정 분류를 위한 대화 음성 데이터셋"(4차년도 + 5차년
 
 ## 요약 성능 (최종 시점)
 
-79개 feature(음향 기본 + 화성 + 선율음정 + 배음 불협화도 + 음계 + 선율/리듬)를 합쳐 Decision Tree / Random Forest로 학습한 결과입니다. (`emotion_classifier.py`)
+117개 feature(음향 기본 + 화성 + 선율음정 + 배음 불협화도 + 음계 + 선율/리듬 + 화자/성별 정규화 + wav2vec2 VAD + 스펙트럼 모양 + 휴지 + 포먼트 대역폭 + 음질(jitter/shimmer/HNR))를 합쳐 Decision Tree / Random Forest로 학습한 결과입니다. (`emotion_classifier.py`)
 
 | 라벨 기준 | 모델 | accuracy | macro F1 |
 |---|---|---|---|
 | situation (시나리오 의도 라벨) | Decision Tree (depth 6) | 0.219 | 0.192 |
-| situation (시나리오 의도 라벨) | Random Forest (300 trees) | 0.379 | 0.295 |
+| situation (시나리오 의도 라벨) | Random Forest (300 trees) | 0.409 | 0.324 |
 | majority_vote (평가자 5명 다수결, 실제 인지 라벨) | Decision Tree (depth 6) | 0.230 | 0.211 |
-| majority_vote (평가자 5명 다수결, 실제 인지 라벨) | **Random Forest (300 trees)** | **0.442** | **0.320** |
+| majority_vote (평가자 5명 다수결, 실제 인지 라벨) | **Random Forest (300 trees)** | **0.477** | **0.349** |
 
-7-클래스 랜덤 베이스라인(~14%) 대비 확실히 개선되지만, **실제 청취 인지 라벨(majority_vote)이 시나리오 의도 라벨(situation)보다 음향 feature와 일관되게 더 잘 맞습니다.** sadness가 가장 잘 분류되고(F1 0.52~0.58), fear/disgust/surprise는 표본 수가 적고 음향적으로 겹치는 부분이 많아 여전히 어렵습니다.
+7-클래스 랜덤 베이스라인(macro F1 ~0.13, 자세한 값은 Phase 15) 대비 확실히 개선되고, **200회 순열 검정(permutation test)에서 p<0.005로 통계적 유의성을 확인**했습니다 — 라벨을 무작위로 섞어 200번 재학습해도 실제 성능의 절반에도 못 미칩니다(Phase 15). **실제 청취 인지 라벨(majority_vote)이 시나리오 의도 라벨(situation)보다 음향 feature와 일관되게 더 잘 맞습니다.** sadness가 가장 잘 분류되고(F1 0.58~0.61), fear/disgust/surprise는 표본 수가 적고 음향적으로 겹치는 부분이 많아 여전히 약합니다(F1 0.13~0.24).
 
-> 주의: 원본 메타데이터에 화자 구분 ID가 없어 train/test를 화자 단위로 분리하지 못했습니다. 같은 화자의 다른 발화가 양쪽에 섞여 있을 수 있어 정확도가 실제보다 낙관적일 수 있습니다.
+> 주의: 원본 메타데이터에 화자 구분 고유 ID가 없어 train/test를 화자 단위로 분리하지 못했습니다. 같은 화자의 다른 발화가 양쪽에 섞여 있을 수 있어 정확도가 실제보다 낙관적일 수 있습니다. MFCC 기반 비지도 클러스터링으로 화자를 대신 추정해보려 했으나 실패했습니다 — 자세한 내용은 Phase 17.
 
 ## 개발 단계 (Phase)
 
@@ -77,24 +77,68 @@ Phase 1~4 feature를 합쳐 Decision Tree/Random Forest 학습. 사람이 읽을
 `emotion_classifier.py` (최종 버전)
 Phase 1~4, 8~9의 모든 feature(79개, harmony/tonality/melody_rhythm 세 소스에 중복 존재하던 `n_voiced_pitch_frames` 컬럼 중복 제거)를 합쳐 재학습. 결과는 상단 요약 표 참고. Random Forest 피처 중요도 상위는 여전히 MFCC·피치 통계·partial_roughness가 지배적이며, `note_dur_mean`은 단독 효과크기는 가장 컸지만 다변량 모델에서는 기존 feature와 정보가 겹쳐 79개 중 54위에 그침 — 통계적 유의성과 모델 기여도가 반드시 일치하지 않는다는 걸 보여주는 사례.
 
+### Phase 11 — 화자/성별 정규화
+`speaker_norm_features.py`
+원본 메타데이터에 화자 고유 ID는 없지만 `성별` 컬럼은 있고, 감정별 성별 비율이 16.5%~41.7%로 불균형하다는 걸 확인 — 성별이 `pitch_mean` 분산의 43%를 설명(상황 효과는 3%뿐). 두 가지로 대응:
+- **포먼트 비율**(F2/F1, F3/F2, F4/F3): 절대 Hz 대신 음성학 표준 화자 정규화 기법 적용. `f3_f2_ratio`가 이후 Random Forest에서 기존 `f1~f4_mean` 4개를 전부 앞지름 — 확실한 개선.
+- **성별 z-score**(`formant_roughness_gender_z`, `pitch_*_gender_z`): 성별 내부로 나눠보면 `formant_roughness` 효과크기가 남성 기준 거의 3배로 뛰는 걸 확인했지만, 정작 성별 z-score로 다시 합치면 개선되지 않음 — 남성은 angry가 최고, 여성은 happiness가 최고로 **감정 순위 자체가 성별마다 다르기 때문**. 반면 `pitch_mean`은 감정 순위가 두 성별 모두 동일해서 z-score가 일반화에는 도움되지만 이 데이터셋 자체의 예측력은 원본보다 약간 낮아짐 — 성능과 일반화의 트레이드오프 사례.
+
+### Phase 12 — 사전학습 음성 임베딩(VAD) 도입
+`vad_features.py`
+Phase 10까지 손으로 설계한 feature의 성능 상한을 넘기 위해, audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim(사전학습 wav2vec2 기반 감정 회귀 모델)로 각 발화의 arousal/dominance/valence를 예측해 feature 3개로 추가. 이 모델(약 300M 파라미터) 하나만 재사용해야 해서 다른 스크립트와 달리 프로세스 풀 병렬화 대신 단일 프로세스로 순차 처리. MPS(Radeon Pro 560)가 배치=1 추론에서 오히려 CPU보다 느려서(0.33개/초 vs 0.74개/초, 커널 디스패치 오버헤드가 실제 연산량보다 큼) CPU 8스레드로 전환, 33,964개 처리에 약 13시간 소요. 이후 도입한 Phase 14 최종 모델에서 arousal/dominance가 나란히 피처 중요도 1·2위를 차지 — 가장 강력한 단일 feature 계열.
+
+### Phase 13 — 추가 음향학적 feature 4종
+CPU가 VAD 추출로 점유된 동안 자동 체이닝으로 순차 실행:
+- `spectral_dynamics_features.py`: spectral centroid/rolloff/flatness, zero-crossing rate, spectral flux — MFCC가 놓치는 음색의 밝기·변화 속도. `spectral_flux_mean`이 최종 모델에서 피처 중요도 3위.
+- `pause_features.py`: 휴지(pause) 개수/길이/비율 — 망설임·숨고르기 등 "소리가 끊기는 패턴".
+- `formant_bandwidth_features.py`: harmony_features.py의 LPC 계산 과정에서 이미 계산되지만 버려지던 포먼트 대역폭을 저장(성대 긴장/breathiness 지표). `harmony_features.py`의 `extract_formants_from_frame()`에 `return_bandwidth` 옵션을 추가해 재사용.
+- `voice_quality_features.py`: jitter(주기 길이 미세 변동)/shimmer(진폭 미세 변동)/HNR(조화 대 잡음비) — 성대 진동 자체의 안정성. Praat 수준의 정밀한 성문 폐쇄점 검출 대신, pyin의 프레임별 F0 추정치를 이용해 파형 국소 최댓값을 따라가는 간이 구현. `hnr_mean`이 최종 모델에서 피처 중요도 10위.
+
+### Phase 14 — 최종 통합 재학습
+`emotion_classifier.py` (117개 feature)
+Phase 1~13의 모든 feature를 합쳐 재학습, `n_voiced_pitch_frames`가 harmony/tonality/melody_rhythm 세 소스에 중복 존재하던 문제를 다시 한번 dedupe. 결과는 상단 요약 표 참고 — 79개(Phase 10) → 86개(Phase 11) → 117개(Phase 14)로 늘면서 situation macro F1 0.295 → 0.306 → 0.324, majority_vote macro F1 0.320 → 0.325 → 0.349로 단계마다 실제 개선을 확인했다.
+
+### Phase 15 — 성능의 통계적 유의성 검증
+`significance_validation.py`
+"macro F1 0.5가 넘어야 유의미하다"는 통설은 이진·균형 분류에서만 성립 — 7-클래스 불균형 문제에서 실제 chance-level macro F1은 0.06~0.14(전략에 따라)에 불과함을 더미 분류기로 먼저 확인. 이어서 두 가지로 엄밀하게 검증:
+- **5-fold 교차검증**: accuracy 0.473±0.006, macro F1 0.339±0.006 — 특정 train/test 분할의 우연이 아님을 확인.
+- **순열 검정(200회)**: 라벨을 무작위로 섞어 동일 절차로 200번 재학습한 귀무분포(macro F1 평균 0.133, 최댓값 0.142)와 실제 성능(macro F1 0.342)을 비교, p<0.005. 실제 성능이 귀무분포 평균보다 55.8 표준편차 위에 있어, 우연일 가능성은 사실상 0.
+
+### Phase 16 — Russell 모델 확장(감정 영역을 타원으로) 검증 — 실패
+`emotion_region_vad.py`
+한의환·차형태(2017)의 "타원 방정식으로 감정을 점이 아닌 영역으로 표현 + 베이지안 결정 규칙" 방법론을 Phase 12의 VAD 값에 적용. 수학적으로 이 방법은 scikit-learn `QuadraticDiscriminantAnalysis`와 동일하다는 걸 이용해 구현. **결과: 실패.** 7개 감정의 1σ 타원이 거의 완전히 겹쳐(sadness만 근소하게 분리) macro F1이 0.126~0.133으로 무작위 baseline보다도 낮음. 원 논문은 사람이 의식적으로 응답한 ANEW 단어 설문 평균(이미 잘 분리된 데이터)에 적용해 92.86% 정확도를 얻었지만, 우리는 wav2vec2가 실제 음성에서 예측한 잡음 많은 값을 쓰기 때문에 재현되지 않음 — "좋은 feature도 다른 feature 없이 단독으로 쓰면 무너진다"는 반증 사례.
+
+### Phase 17 — MFCC 기반 화자 클러스터링 시도 — 실패, 중단
+화자 단위 train/test 분리(Phase 10 이후 계속 언급된 한계)를 위해 MFCC로 화자를 비지도 클러스터링해보려 했으나, 검증 결과 실패로 판단해 중단. 가장 쉬운 케이스(성별 2그룹, `pitch_mean` 효과크기 0.43으로 이미 알려진 정답)로 KMeans(k=2)를 테스트한 결과 성별과 무관하게 뒤섞임 — 발화문이 28,512종으로 거의 다 다르고 같은 화자가 같은 문장을 감정별로 반복한 구조도 아니라서, 클러스터링이 화자보다 발화 내용/감정 변동을 더 크게 잡는 것으로 판단. 개별 화자 식별은 전용 화자 임베딩 모델(ECAPA-TDNN 등)이 필요하며, 그래도 정답(진짜 화자 ID) 없이는 검증이 불가능하다는 근본적 한계는 남는다 — 추가 파이프라인 구축 없이 여기서 중단.
+
 ## 저장소 구성
 
 ```
 ├── similarity.py, similarity_vectorized.py   # Phase 0
 ├── extract_features.py                       # Phase 1
-├── harmony_features.py                       # Phase 2
+├── harmony_features.py                       # Phase 2 (Phase 13에서 return_bandwidth 옵션 추가)
 ├── melodic_profile.py                        # Phase 3
 ├── partial_roughness.py                      # Phase 4
 ├── text_features.py                          # Phase 5 (최종 모델에는 미사용)
-├── emotion_classifier.py                     # Phase 6, 10 - 통합 학습/평가
+├── emotion_classifier.py                     # Phase 6, 10, 14 - 통합 학습/평가
 ├── dissonance_tonality_stats.py              # Phase 7 - 유의성 검정
 ├── tonality_features.py                      # Phase 8
 ├── melody_rhythm_features.py                 # Phase 9
+├── speaker_norm_features.py                  # Phase 11
+├── vad_features.py                           # Phase 12
+├── spectral_dynamics_features.py             # Phase 13
+├── pause_features.py                         # Phase 13
+├── formant_bandwidth_features.py             # Phase 13
+├── voice_quality_features.py                 # Phase 13
+├── significance_validation.py                # Phase 15
+├── emotion_region_vad.py                     # Phase 16 (실패 사례)
 ├── output/
-│   ├── features/, harmony/, melodic_profile/,
-│   │   partial_roughness/, tonality/, melody_rhythm/
+│   ├── features/, harmony/, melodic_profile/, partial_roughness/,
+│   │   tonality/, melody_rhythm/, speaker_norm/, vad/, pause/,
+│   │   spectral_dynamics/, formant_bandwidth/, voice_quality/
 │   │       ├── per_file_*.csv         # 파일 단위 feature (34k rows)
 │   │       └── summary_by_emotion.csv # 감정별 평균/표준편차
+│   ├── vad_region/                    # Phase 16 시각화 (PNG)
 │   └── model/
 │       ├── decision_tree*.joblib, feature_names*.json
 │       └── random_forest*.joblib      # Git LFS
@@ -104,7 +148,7 @@ Phase 1~4, 8~9의 모든 feature(79개, harmony/tonality/melody_rhythm 세 소�
 
 ## 다음 단계 후보
 
-- **사전학습 음성 임베딩(Wav2Vec2/HuBERT) 도입**: 손으로 설계한 feature의 성능 상한을 넘기 위한 가장 유력한 방향. 계산 비용 증가와 해석력 저하가 트레이드오프.
-- **클래스 불균형 처리 강화**: fear/disgust/surprise recall이 낮음 — SMOTE, 클래스별 threshold 조정 검토.
-- **화자 단위 train/test 분리**: 현재 성능 수치의 낙관 편향을 검증.
+- **클래스 불균형 처리 강화**: fear/disgust/surprise recall이 여전히 낮음(0.08~0.18) — SMOTE, 클래스별 threshold 조정 검토.
 - **LightGBM/XGBoost**로 모델 교체 비교.
+- **화자 임베딩 기반 재시도**: MFCC 클러스터링은 실패(Phase 17)했지만, ECAPA-TDNN 등 화자 인식 전용 임베딩으로는 가능성이 남아있음 — 다만 검증 불가능하다는 근본적 한계는 여전함.
+- **텍스트/문맥 정보 재도입**: valence는 음향만으로 예측하기 어렵다는 게 Phase 16에서 다시 확인됨 — 어휘·문맥 정보 결합이 필요할 수 있음(Phase 5에서 시도했으나 스크립트 종속적이라 폐기됐던 접근을 다른 방식으로 재검토).
