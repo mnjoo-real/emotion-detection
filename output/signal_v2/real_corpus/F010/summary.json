@@ -1,0 +1,114 @@
+{
+  "family": "F010",
+  "n_features": 33,
+  "feature_cols": [
+    "f010_h1_modulation_bandwidth",
+    "f010_h1_modulation_centroid",
+    "f010_h1_modulation_dominant_freq",
+    "f010_h1_modulation_entropy",
+    "f010_h1_modulation_high_rate_energy",
+    "f010_h1_modulation_low_rate_energy",
+    "f010_h2_modulation_bandwidth",
+    "f010_h2_modulation_centroid",
+    "f010_h2_modulation_dominant_freq",
+    "f010_h2_modulation_entropy",
+    "f010_h2_modulation_high_rate_energy",
+    "f010_h2_modulation_low_rate_energy",
+    "f010_h3_modulation_bandwidth",
+    "f010_h3_modulation_centroid",
+    "f010_h3_modulation_dominant_freq",
+    "f010_h3_modulation_entropy",
+    "f010_h3_modulation_high_rate_energy",
+    "f010_h3_modulation_low_rate_energy",
+    "f010_h4_modulation_bandwidth",
+    "f010_h4_modulation_centroid",
+    "f010_h4_modulation_dominant_freq",
+    "f010_h4_modulation_entropy",
+    "f010_h4_modulation_high_rate_energy",
+    "f010_h4_modulation_low_rate_energy",
+    "f010_h5_modulation_bandwidth",
+    "f010_h5_modulation_centroid",
+    "f010_h5_modulation_dominant_freq",
+    "f010_h5_modulation_entropy",
+    "f010_h5_modulation_high_rate_energy",
+    "f010_h5_modulation_low_rate_energy",
+    "f010_inter_harmonic_modulation_coherence",
+    "f010_modulation_dominant_freq_mean",
+    "f010_modulation_low_rate_ratio_mean"
+  ],
+  "n_constant": 0,
+  "n_high_nan": 0,
+  "top_situation_feature": "f010_inter_harmonic_modulation_coherence",
+  "top_situation_eps2": 0.05009961317315025,
+  "type_counts": {
+    "B_gender_dependent": 18,
+    "A_robust": 11,
+    "D_no_effect_anywhere": 3,
+    "E_ambiguous": 1
+  },
+  "n_high_redundancy": 0,
+  "classifier_situation": {
+    "baseline_f1_per_fold": [
+      0.2395654213709472,
+      0.2415145910279663,
+      0.2223097356139399,
+      0.264973689228529,
+      0.25150368389729777
+    ],
+    "combined_f1_per_fold": [
+      0.27373141828040065,
+      0.25747978184425885,
+      0.270483586634305,
+      0.2513225708434435,
+      0.23468386479860173
+    ],
+    "delta_per_fold": [
+      0.03416599690945346,
+      0.01596519081629255,
+      0.04817385102036509,
+      -0.013651118385085481,
+      -0.016819819098696037
+    ],
+    "baseline_f1_mean": 0.24397342422773605,
+    "baseline_f1_std": 0.014089057420848464,
+    "combined_f1_mean": 0.25754024448020196,
+    "combined_f1_std": 0.014076657475974011,
+    "delta_mean": 0.013566820252465916,
+    "delta_std": 0.025658873216151283,
+    "delta_median": 0.01596519081629255,
+    "n_folds_improved": 3,
+    "n_folds": 5
+  },
+  "classifier_majority_vote": {
+    "baseline_f1_per_fold": [
+      0.29052633865290867,
+      0.2847096350251533,
+      0.3007653949692353,
+      0.29540969889665447,
+      0.300333371189153
+    ],
+    "combined_f1_per_fold": [
+      0.24703215526410705,
+      0.22059659018699704,
+      0.3120920239967859,
+      0.2825686128405781,
+      0.30723880991045066
+    ],
+    "delta_per_fold": [
+      -0.04349418338880162,
+      -0.06411304483815625,
+      0.01132662902755055,
+      -0.012841086056076367,
+      0.006905438721297674
+    ],
+    "baseline_f1_mean": 0.29434888774662094,
+    "baseline_f1_std": 0.006093242189672101,
+    "combined_f1_mean": 0.27390563843978377,
+    "combined_f1_std": 0.03523744091525672,
+    "delta_mean": -0.0204432493068372,
+    "delta_std": 0.029166643262917822,
+    "delta_median": -0.012841086056076367,
+    "n_folds_improved": 2,
+    "n_folds": 5
+  }
+}

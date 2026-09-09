@@ -1,0 +1,1260 @@
+{
+  "duration_confound": {
+    "table": [
+      {
+        "feature": "f010_h2_modulation_entropy",
+        "dur_total_sec": 0.6972851976269541,
+        "dur_voiced_sec": 0.6176005855989496,
+        "dur_n_voiced_frames": 0.6175569022649019,
+        "dur_speaking_rate_proxy": -0.1833180448960605,
+        "max_abs_rho": 0.6972851976269541
+      },
+      {
+        "feature": "f010_h1_modulation_entropy",
+        "dur_total_sec": 0.6916043532879622,
+        "dur_voiced_sec": 0.6319670436438398,
+        "dur_n_voiced_frames": 0.63193751868975,
+        "dur_speaking_rate_proxy": -0.15915604600270591,
+        "max_abs_rho": 0.6916043532879622
+      },
+      {
+        "feature": "f010_h3_modulation_entropy",
+        "dur_total_sec": 0.6639701114797554,
+        "dur_voiced_sec": 0.6168057425063987,
+        "dur_n_voiced_frames": 0.6167664868694337,
+        "dur_speaking_rate_proxy": -0.1146942468909649,
+        "max_abs_rho": 0.6639701114797554
+      },
+      {
+        "feature": "f010_h5_modulation_entropy",
+        "dur_total_sec": 0.6572578808219322,
+        "dur_voiced_sec": 0.598557834660165,
+        "dur_n_voiced_frames": 0.5985264935783079,
+        "dur_speaking_rate_proxy": -0.12635998454800998,
+        "max_abs_rho": 0.6572578808219322
+      },
+      {
+        "feature": "f010_h4_modulation_entropy",
+        "dur_total_sec": 0.6505648685563026,
+        "dur_voiced_sec": 0.6029822332051554,
+        "dur_n_voiced_frames": 0.6029546601499182,
+        "dur_speaking_rate_proxy": -0.1093975979337115,
+        "max_abs_rho": 0.6505648685563026
+      },
+      {
+        "feature": "f010_h1_modulation_high_rate_energy",
+        "dur_total_sec": 0.08446271046103414,
+        "dur_voiced_sec": 0.23642160863078504,
+        "dur_n_voiced_frames": 0.23645257126279545,
+        "dur_speaking_rate_proxy": 0.33075437494888194,
+        "max_abs_rho": 0.33075437494888194
+      },
+      {
+        "feature": "f010_h1_modulation_low_rate_energy",
+        "dur_total_sec": 0.1118485672873283,
+        "dur_voiced_sec": 0.2613055151291839,
+        "dur_n_voiced_frames": 0.261324173754127,
+        "dur_speaking_rate_proxy": 0.32654984290573214,
+        "max_abs_rho": 0.32654984290573214
+      },
+      {
+        "feature": "f010_h4_modulation_high_rate_energy",
+        "dur_total_sec": 0.06557539765802148,
+        "dur_voiced_sec": 0.20275580819197084,
+        "dur_n_voiced_frames": 0.20278620317936094,
+        "dur_speaking_rate_proxy": 0.2965222626241036,
+        "max_abs_rho": 0.2965222626241036
+      },
+      {
+        "feature": "f010_h3_modulation_high_rate_energy",
+        "dur_total_sec": 0.08517341268320898,
+        "dur_voiced_sec": 0.22187702573365964,
+        "dur_n_voiced_frames": 0.22190652170192543,
+        "dur_speaking_rate_proxy": 0.28912913446987215,
+        "max_abs_rho": 0.28912913446987215
+      },
+      {
+        "feature": "f010_h2_modulation_high_rate_energy",
+        "dur_total_sec": 0.09418256373776392,
+        "dur_voiced_sec": 0.2293161180285736,
+        "dur_n_voiced_frames": 0.22934609922719684,
+        "dur_speaking_rate_proxy": 0.28775484617207936,
+        "max_abs_rho": 0.28775484617207936
+      },
+      {
+        "feature": "f010_modulation_dominant_freq_mean",
+        "dur_total_sec": -0.2861630439046308,
+        "dur_voiced_sec": -0.23999013190919205,
+        "dur_n_voiced_frames": -0.23990242779050944,
+        "dur_speaking_rate_proxy": 0.07090280375049642,
+        "max_abs_rho": 0.2861630439046308
+      },
+      {
+        "feature": "f010_h2_modulation_low_rate_energy",
+        "dur_total_sec": 0.11680757721223987,
+        "dur_voiced_sec": 0.2498421945611312,
+        "dur_n_voiced_frames": 0.24986490537545195,
+        "dur_speaking_rate_proxy": 0.27932680025153606,
+        "max_abs_rho": 0.27932680025153606
+      },
+      {
+        "feature": "f010_h4_modulation_low_rate_energy",
+        "dur_total_sec": 0.0854206649848218,
+        "dur_voiced_sec": 0.21323057814343463,
+        "dur_n_voiced_frames": 0.21325464618477274,
+        "dur_speaking_rate_proxy": 0.27273467663932804,
+        "max_abs_rho": 0.27273467663932804
+      },
+      {
+        "feature": "f010_h3_modulation_low_rate_energy",
+        "dur_total_sec": 0.11052146175791089,
+        "dur_voiced_sec": 0.23741934572004347,
+        "dur_n_voiced_frames": 0.2374409781060805,
+        "dur_speaking_rate_proxy": 0.26758051060834864,
+        "max_abs_rho": 0.26758051060834864
+      },
+      {
+        "feature": "f010_inter_harmonic_modulation_coherence",
+        "dur_total_sec": -0.22024455008911836,
+        "dur_voiced_sec": -0.11024686069359292,
+        "dur_n_voiced_frames": -0.11021415174809254,
+        "dur_speaking_rate_proxy": 0.2562025070335662,
+        "max_abs_rho": 0.2562025070335662
+      },
+      {
+        "feature": "f010_h3_modulation_centroid",
+        "dur_total_sec": -0.24723542730031772,
+        "dur_voiced_sec": -0.19137504560753274,
+        "dur_n_voiced_frames": -0.1913527535922343,
+        "dur_speaking_rate_proxy": 0.12072354523296824,
+        "max_abs_rho": 0.24723542730031772
+      },
+      {
+        "feature": "f010_h5_modulation_high_rate_energy",
+        "dur_total_sec": 0.09904693800495135,
+        "dur_voiced_sec": 0.2073866738582443,
+        "dur_n_voiced_frames": 0.20741675872481544,
+        "dur_speaking_rate_proxy": 0.24262526958646743,
+        "max_abs_rho": 0.24262526958646743
+      },
+      {
+        "feature": "f010_h1_modulation_dominant_freq",
+        "dur_total_sec": -0.2308740864292771,
+        "dur_voiced_sec": -0.18189379994127472,
+        "dur_n_voiced_frames": -0.18181743386062588,
+        "dur_speaking_rate_proxy": 0.06294732251385526,
+        "max_abs_rho": 0.2308740864292771
+      },
+      {
+        "feature": "f010_h3_modulation_dominant_freq",
+        "dur_total_sec": -0.2301525563021781,
+        "dur_voiced_sec": -0.18557537539960445,
+        "dur_n_voiced_frames": -0.18551436042893335,
+        "dur_speaking_rate_proxy": 0.058187751833871315,
+        "max_abs_rho": 0.2301525563021781
+      },
+      {
+        "feature": "f010_h5_modulation_low_rate_energy",
+        "dur_total_sec": 0.11665184460420563,
+        "dur_voiced_sec": 0.21728098819169167,
+        "dur_n_voiced_frames": 0.21730663950186344,
+        "dur_speaking_rate_proxy": 0.22297355873740982,
+        "max_abs_rho": 0.22297355873740982
+      },
+      {
+        "feature": "f010_h2_modulation_dominant_freq",
+        "dur_total_sec": -0.21823621508012095,
+        "dur_voiced_sec": -0.1829109808996333,
+        "dur_n_voiced_frames": -0.18284467237970284,
+        "dur_speaking_rate_proxy": 0.03910750134692385,
+        "max_abs_rho": 0.21823621508012095
+      },
+      {
+        "feature": "f010_h4_modulation_dominant_freq",
+        "dur_total_sec": -0.21209277193908332,
+        "dur_voiced_sec": -0.1766238347311604,
+        "dur_n_voiced_frames": -0.17655667226621216,
+        "dur_speaking_rate_proxy": 0.040895782983542205,
+        "max_abs_rho": 0.21209277193908332
+      },
+      {
+        "feature": "f010_h5_modulation_dominant_freq",
+        "dur_total_sec": -0.20663626337194546,
+        "dur_voiced_sec": -0.17780499111844406,
+        "dur_n_voiced_frames": -0.17774625920513176,
+        "dur_speaking_rate_proxy": 0.03730860422813822,
+        "max_abs_rho": 0.20663626337194546
+      },
+      {
+        "feature": "f010_h3_modulation_bandwidth",
+        "dur_total_sec": -0.1941598280510787,
+        "dur_voiced_sec": -0.1232719472175057,
+        "dur_n_voiced_frames": -0.12326265673075645,
+        "dur_speaking_rate_proxy": 0.15436477826918618,
+        "max_abs_rho": 0.1941598280510787
+      },
+      {
+        "feature": "f010_modulation_low_rate_ratio_mean",
+        "dur_total_sec": 0.18913712563238977,
+        "dur_voiced_sec": 0.16327372192781298,
+        "dur_n_voiced_frames": 0.16326203959173635,
+        "dur_speaking_rate_proxy": -0.059967423424790674,
+        "max_abs_rho": 0.18913712563238977
+      },
+      {
+        "feature": "f010_h1_modulation_centroid",
+        "dur_total_sec": -0.154328648615833,
+        "dur_voiced_sec": -0.11815588665897211,
+        "dur_n_voiced_frames": -0.11810094301920511,
+        "dur_speaking_rate_proxy": 0.06259253610046686,
+        "max_abs_rho": 0.154328648615833
+      },
+      {
+        "feature": "f010_h5_modulation_centroid",
+        "dur_total_sec": -0.145027843317251,
+        "dur_voiced_sec": -0.11467988153368824,
+        "dur_n_voiced_frames": -0.11465778947666097,
+        "dur_speaking_rate_proxy": 0.07029740496732158,
+        "max_abs_rho": 0.145027843317251
+      },
+      {
+        "feature": "f010_h4_modulation_centroid",
+        "dur_total_sec": -0.14244458002870936,
+        "dur_voiced_sec": -0.11199264912529934,
+        "dur_n_voiced_frames": -0.11197434080968104,
+        "dur_speaking_rate_proxy": 0.06317003779866871,
+        "max_abs_rho": 0.14244458002870936
+      },
+      {
+        "feature": "f010_h2_modulation_centroid",
+        "dur_total_sec": -0.12458451641879924,
+        "dur_voiced_sec": -0.1148237380657132,
+        "dur_n_voiced_frames": -0.11480319429797199,
+        "dur_speaking_rate_proxy": 0.03139216665584809,
+        "max_abs_rho": 0.12458451641879924
+      },
+      {
+        "feature": "f010_h2_modulation_bandwidth",
+        "dur_total_sec": -0.09537188461262565,
+        "dur_voiced_sec": -0.06800520920910562,
+        "dur_n_voiced_frames": -0.06799474205295243,
+        "dur_speaking_rate_proxy": 0.08654956791879188,
+        "max_abs_rho": 0.09537188461262565
+      },
+      {
+        "feature": "f010_h5_modulation_bandwidth",
+        "dur_total_sec": -0.08959503796496862,
+        "dur_voiced_sec": -0.055917234740342825,
+        "dur_n_voiced_frames": -0.05589438610444294,
+        "dur_speaking_rate_proxy": 0.06563981036740592,
+        "max_abs_rho": 0.08959503796496862
+      },
+      {
+        "feature": "f010_h1_modulation_bandwidth",
+        "dur_total_sec": -0.07433451281632687,
+        "dur_voiced_sec": -0.05132849651895825,
+        "dur_n_voiced_frames": -0.05129919226629166,
+        "dur_speaking_rate_proxy": 0.04875522062910728,
+        "max_abs_rho": 0.07433451281632687
+      },
+      {
+        "feature": "f010_h4_modulation_bandwidth",
+        "dur_total_sec": -0.048207321826963974,
+        "dur_voiced_sec": -0.029567761121046403,
+        "dur_n_voiced_frames": -0.02957208766623688,
+        "dur_speaking_rate_proxy": 0.026601502422645276,
+        "max_abs_rho": 0.048207321826963974
+      }
+    ],
+    "n_strong_proxy": 0
+  },
+  "f0_dynamics_confound": {
+    "table": [
+      {
+        "feature": "f010_inter_harmonic_modulation_coherence",
+        "f0dyn_mean": -0.5926692819741235,
+        "f0dyn_std": -0.38252526222134375,
+        "f0dyn_range": -0.48817576094189036,
+        "f0dyn_deriv_energy": -0.2772551385412515,
+        "max_abs_rho": 0.5926692819741235
+      },
+      {
+        "feature": "f010_h1_modulation_entropy",
+        "f0dyn_mean": 0.3286617128740518,
+        "f0dyn_std": 0.2977842714642785,
+        "f0dyn_range": 0.42933458362189636,
+        "f0dyn_deriv_energy": 0.16019040388723232,
+        "max_abs_rho": 0.42933458362189636
+      },
+      {
+        "feature": "f010_h2_modulation_entropy",
+        "f0dyn_mean": 0.3742052215332764,
+        "f0dyn_std": 0.310744409271929,
+        "f0dyn_range": 0.42740322458698426,
+        "f0dyn_deriv_energy": 0.1627902769338148,
+        "max_abs_rho": 0.42740322458698426
+      },
+      {
+        "feature": "f010_h5_modulation_entropy",
+        "f0dyn_mean": 0.2545372989621788,
+        "f0dyn_std": 0.27817292035061536,
+        "f0dyn_range": 0.3709266567401239,
+        "f0dyn_deriv_energy": 0.17842931115198096,
+        "max_abs_rho": 0.3709266567401239
+      },
+      {
+        "feature": "f010_h2_modulation_centroid",
+        "f0dyn_mean": 0.3557075575767422,
+        "f0dyn_std": 0.214541401005088,
+        "f0dyn_range": 0.23456945871533164,
+        "f0dyn_deriv_energy": 0.19604713500947124,
+        "max_abs_rho": 0.3557075575767422
+      },
+      {
+        "feature": "f010_h4_modulation_entropy",
+        "f0dyn_mean": 0.2514064693764786,
+        "f0dyn_std": 0.2524182133329077,
+        "f0dyn_range": 0.34571768417822174,
+        "f0dyn_deriv_energy": 0.16212874598405408,
+        "max_abs_rho": 0.34571768417822174
+      },
+      {
+        "feature": "f010_h1_modulation_bandwidth",
+        "f0dyn_mean": 0.27130900431217425,
+        "f0dyn_std": 0.32586803360613964,
+        "f0dyn_range": 0.3152213284198889,
+        "f0dyn_deriv_energy": 0.2095851011002703,
+        "max_abs_rho": 0.32586803360613964
+      },
+      {
+        "feature": "f010_h3_modulation_entropy",
+        "f0dyn_mean": 0.21981497949743853,
+        "f0dyn_std": 0.22653891441489804,
+        "f0dyn_range": 0.3213926025105543,
+        "f0dyn_deriv_energy": 0.17201677726803508,
+        "max_abs_rho": 0.3213926025105543
+      },
+      {
+        "feature": "f010_h1_modulation_centroid",
+        "f0dyn_mean": 0.29996437170193896,
+        "f0dyn_std": 0.24178510149385649,
+        "f0dyn_range": 0.2637545463447524,
+        "f0dyn_deriv_energy": 0.19624271236873084,
+        "max_abs_rho": 0.29996437170193896
+      },
+      {
+        "feature": "f010_h5_modulation_bandwidth",
+        "f0dyn_mean": 0.14398575130468363,
+        "f0dyn_std": 0.21347989025941924,
+        "f0dyn_range": 0.1862831103831666,
+        "f0dyn_deriv_energy": 0.2907098742688863,
+        "max_abs_rho": 0.2907098742688863
+      },
+      {
+        "feature": "f010_modulation_dominant_freq_mean",
+        "f0dyn_mean": 0.28782066275202833,
+        "f0dyn_std": 0.0003781600148620515,
+        "f0dyn_range": 0.07057992945714534,
+        "f0dyn_deriv_energy": 0.14022240260775548,
+        "max_abs_rho": 0.28782066275202833
+      },
+      {
+        "feature": "f010_h3_modulation_dominant_freq",
+        "f0dyn_mean": 0.26777010801599366,
+        "f0dyn_std": 0.03543192356433943,
+        "f0dyn_range": 0.08104214423155869,
+        "f0dyn_deriv_energy": 0.11873550255571681,
+        "max_abs_rho": 0.26777010801599366
+      },
+      {
+        "feature": "f010_modulation_low_rate_ratio_mean",
+        "f0dyn_mean": -0.26619007895995284,
+        "f0dyn_std": -0.19107643422267057,
+        "f0dyn_range": -0.1935755847155942,
+        "f0dyn_deriv_energy": -0.2151698269816902,
+        "max_abs_rho": 0.26619007895995284
+      },
+      {
+        "feature": "f010_h3_modulation_bandwidth",
+        "f0dyn_mean": 0.03757602500234512,
+        "f0dyn_std": 0.12605533253551954,
+        "f0dyn_range": 0.0786778938650739,
+        "f0dyn_deriv_energy": 0.26350604843603054,
+        "max_abs_rho": 0.26350604843603054
+      },
+      {
+        "feature": "f010_h4_modulation_bandwidth",
+        "f0dyn_mean": 0.2174894360368843,
+        "f0dyn_std": 0.234570919970586,
+        "f0dyn_range": 0.22566339277355962,
+        "f0dyn_deriv_energy": 0.25965084967608953,
+        "max_abs_rho": 0.25965084967608953
+      },
+      {
+        "feature": "f010_h4_modulation_low_rate_energy",
+        "f0dyn_mean": -0.24151867861740167,
+        "f0dyn_std": 0.03217977880892505,
+        "f0dyn_range": -0.05054447045883297,
+        "f0dyn_deriv_energy": 0.06212652878175668,
+        "max_abs_rho": 0.24151867861740167
+      },
+      {
+        "feature": "f010_h1_modulation_high_rate_energy",
+        "f0dyn_mean": -0.03591831424403789,
+        "f0dyn_std": 0.23332390767254768,
+        "f0dyn_range": 0.13939759762726334,
+        "f0dyn_deriv_energy": 0.19484928162864223,
+        "max_abs_rho": 0.23332390767254768
+      },
+      {
+        "feature": "f010_h5_modulation_centroid",
+        "f0dyn_mean": 0.17827233148005253,
+        "f0dyn_std": 0.17548593355696318,
+        "f0dyn_range": 0.16354869165307687,
+        "f0dyn_deriv_energy": 0.23132854368074388,
+        "max_abs_rho": 0.23132854368074388
+      },
+      {
+        "feature": "f010_h3_modulation_centroid",
+        "f0dyn_mean": 0.11612726041478302,
+        "f0dyn_std": 0.09238563314135803,
+        "f0dyn_range": 0.06884007020152133,
+        "f0dyn_deriv_energy": 0.21885772099154863,
+        "max_abs_rho": 0.21885772099154863
+      },
+      {
+        "feature": "f010_h2_modulation_high_rate_energy",
+        "f0dyn_mean": -0.05663103763974225,
+        "f0dyn_std": 0.21646367603831873,
+        "f0dyn_range": 0.12957988629662232,
+        "f0dyn_deriv_energy": 0.19662661635468767,
+        "max_abs_rho": 0.21646367603831873
+      },
+      {
+        "feature": "f010_h4_modulation_centroid",
+        "f0dyn_mean": 0.2147574448470929,
+        "f0dyn_std": 0.1560403390876366,
+        "f0dyn_range": 0.1554236284001883,
+        "f0dyn_deriv_energy": 0.20608346082975412,
+        "max_abs_rho": 0.2147574448470929
+      },
+      {
+        "feature": "f010_h4_modulation_high_rate_energy",
+        "f0dyn_mean": -0.21451520565644605,
+        "f0dyn_std": 0.05181114159460578,
+        "f0dyn_range": -0.03206950404200514,
+        "f0dyn_deriv_energy": 0.0946504462502277,
+        "max_abs_rho": 0.21451520565644605
+      },
+      {
+        "feature": "f010_h2_modulation_bandwidth",
+        "f0dyn_mean": 0.2041080472854469,
+        "f0dyn_std": 0.19443526829787744,
+        "f0dyn_range": 0.17365001792746937,
+        "f0dyn_deriv_energy": 0.17380469508985905,
+        "max_abs_rho": 0.2041080472854469
+      },
+      {
+        "feature": "f010_h2_modulation_dominant_freq",
+        "f0dyn_mean": 0.19412186535789772,
+        "f0dyn_std": -0.04554958960506324,
+        "f0dyn_range": 0.022233517901058025,
+        "f0dyn_deriv_energy": 0.11544486576393875,
+        "max_abs_rho": 0.19412186535789772
+      },
+      {
+        "feature": "f010_h5_modulation_low_rate_energy",
+        "f0dyn_mean": -0.1935647474455709,
+        "f0dyn_std": 0.0409479873641335,
+        "f0dyn_range": -0.03229310997679547,
+        "f0dyn_deriv_energy": 0.02718516547348093,
+        "max_abs_rho": 0.1935647474455709
+      },
+      {
+        "feature": "f010_h1_modulation_low_rate_energy",
+        "f0dyn_mean": -0.08823178991417853,
+        "f0dyn_std": 0.1927055225173949,
+        "f0dyn_range": 0.0936092215967392,
+        "f0dyn_deriv_energy": 0.1621559034323123,
+        "max_abs_rho": 0.1927055225173949
+      },
+      {
+        "feature": "f010_h4_modulation_dominant_freq",
+        "f0dyn_mean": 0.19261412470362976,
+        "f0dyn_std": 0.006362326415613919,
+        "f0dyn_range": 0.04335750234889513,
+        "f0dyn_deriv_energy": 0.09687275709441427,
+        "max_abs_rho": 0.19261412470362976
+      },
+      {
+        "feature": "f010_h3_modulation_low_rate_energy",
+        "f0dyn_mean": -0.18959071189030494,
+        "f0dyn_std": 0.08322034420863045,
+        "f0dyn_range": -7.643473681847192e-05,
+        "f0dyn_deriv_energy": 0.08902199294125006,
+        "max_abs_rho": 0.18959071189030494
+      },
+      {
+        "feature": "f010_h2_modulation_low_rate_energy",
+        "f0dyn_mean": -0.12487412347805135,
+        "f0dyn_std": 0.1673713623614823,
+        "f0dyn_range": 0.07899132089263884,
+        "f0dyn_deriv_energy": 0.15204240410326741,
+        "max_abs_rho": 0.1673713623614823
+      },
+      {
+        "feature": "f010_h3_modulation_high_rate_energy",
+        "f0dyn_mean": -0.16586679162299867,
+        "f0dyn_std": 0.10043754103956176,
+        "f0dyn_range": 0.016373579669927266,
+        "f0dyn_deriv_energy": 0.12788593259486358,
+        "max_abs_rho": 0.16586679162299867
+      },
+      {
+        "feature": "f010_h5_modulation_high_rate_energy",
+        "f0dyn_mean": -0.1626637214756597,
+        "f0dyn_std": 0.07318445570635497,
+        "f0dyn_range": -0.0018695460821966797,
+        "f0dyn_deriv_energy": 0.0648496642818987,
+        "max_abs_rho": 0.1626637214756597
+      },
+      {
+        "feature": "f010_h5_modulation_dominant_freq",
+        "f0dyn_mean": 0.1463246477298431,
+        "f0dyn_std": -0.06331441204835225,
+        "f0dyn_range": -0.01601423165973288,
+        "f0dyn_deriv_energy": 0.058369569208682894,
+        "max_abs_rho": 0.1463246477298431
+      },
+      {
+        "feature": "f010_h1_modulation_dominant_freq",
+        "f0dyn_mean": 0.13988787547722958,
+        "f0dyn_std": -0.0604930122312402,
+        "f0dyn_range": -0.00912865911063508,
+        "f0dyn_deriv_energy": 0.07424275495128867,
+        "max_abs_rho": 0.13988787547722958
+      }
+    ],
+    "n_strong_proxy": 0
+  },
+  "energy_dynamics_confound": {
+    "table": [
+      {
+        "feature": "f010_h2_modulation_low_rate_energy",
+        "energy_mean": 0.8728211887571664,
+        "energy_std": 0.8970731792647417,
+        "energy_range": 0.8988310489662786,
+        "max_abs_rho": 0.8988310489662786
+      },
+      {
+        "feature": "f010_h2_modulation_high_rate_energy",
+        "energy_mean": 0.8783499160677416,
+        "energy_std": 0.8926425268584323,
+        "energy_range": 0.8973100394438976,
+        "max_abs_rho": 0.8973100394438976
+      },
+      {
+        "feature": "f010_h3_modulation_high_rate_energy",
+        "energy_mean": 0.8689351022263643,
+        "energy_std": 0.8882678599034273,
+        "energy_range": 0.886782347483705,
+        "max_abs_rho": 0.8882678599034273
+      },
+      {
+        "feature": "f010_h3_modulation_low_rate_energy",
+        "energy_mean": 0.8580829028119769,
+        "energy_std": 0.8831576196868323,
+        "energy_range": 0.8804196197476196,
+        "max_abs_rho": 0.8831576196868323
+      },
+      {
+        "feature": "f010_h4_modulation_high_rate_energy",
+        "energy_mean": 0.8606169682448089,
+        "energy_std": 0.8781254451077344,
+        "energy_range": 0.8772156093665647,
+        "max_abs_rho": 0.8781254451077344
+      },
+      {
+        "feature": "f010_h1_modulation_low_rate_energy",
+        "energy_mean": 0.8572872682952536,
+        "energy_std": 0.8762075782400182,
+        "energy_range": 0.8775166459633035,
+        "max_abs_rho": 0.8775166459633035
+      },
+      {
+        "feature": "f010_h1_modulation_high_rate_energy",
+        "energy_mean": 0.8649683042841205,
+        "energy_std": 0.8704478814238463,
+        "energy_range": 0.876719983749263,
+        "max_abs_rho": 0.876719983749263
+      },
+      {
+        "feature": "f010_h4_modulation_low_rate_energy",
+        "energy_mean": 0.8450515871254455,
+        "energy_std": 0.8670220064981085,
+        "energy_range": 0.865052571090962,
+        "max_abs_rho": 0.8670220064981085
+      },
+      {
+        "feature": "f010_h5_modulation_high_rate_energy",
+        "energy_mean": 0.8456380174537992,
+        "energy_std": 0.8617992137459547,
+        "energy_range": 0.8606738152125881,
+        "max_abs_rho": 0.8617992137459547
+      },
+      {
+        "feature": "f010_h5_modulation_low_rate_energy",
+        "energy_mean": 0.8241097965574764,
+        "energy_std": 0.8465514392026294,
+        "energy_range": 0.8432553209028606,
+        "max_abs_rho": 0.8465514392026294
+      },
+      {
+        "feature": "f010_h4_modulation_entropy",
+        "energy_mean": -0.15841857936807988,
+        "energy_std": -0.1510377665644582,
+        "energy_range": -0.11034645425839505,
+        "max_abs_rho": 0.15841857936807988
+      },
+      {
+        "feature": "f010_h3_modulation_entropy",
+        "energy_mean": -0.1547584769175903,
+        "energy_std": -0.15450483247331107,
+        "energy_range": -0.11416670256318645,
+        "max_abs_rho": 0.1547584769175903
+      },
+      {
+        "feature": "f010_h2_modulation_entropy",
+        "energy_mean": -0.14358889833252833,
+        "energy_std": -0.153043210736332,
+        "energy_range": -0.10918556736872971,
+        "max_abs_rho": 0.153043210736332
+      },
+      {
+        "feature": "f010_h5_modulation_entropy",
+        "energy_mean": -0.14813620969048602,
+        "energy_std": -0.14648776132757504,
+        "energy_range": -0.1024423729662253,
+        "max_abs_rho": 0.14813620969048602
+      },
+      {
+        "feature": "f010_h1_modulation_entropy",
+        "energy_mean": -0.1175269098169365,
+        "energy_std": -0.1376688807348517,
+        "energy_range": -0.0914224577228283,
+        "max_abs_rho": 0.1376688807348517
+      },
+      {
+        "feature": "f010_inter_harmonic_modulation_coherence",
+        "energy_mean": 0.046053491426708455,
+        "energy_std": 0.11961020534048379,
+        "energy_range": 0.11105490068398724,
+        "max_abs_rho": 0.11961020534048379
+      },
+      {
+        "feature": "f010_h1_modulation_bandwidth",
+        "energy_mean": 0.07876571802915644,
+        "energy_std": 0.03628202288441402,
+        "energy_range": 0.05371071982325356,
+        "max_abs_rho": 0.07876571802915644
+      },
+      {
+        "feature": "f010_h4_modulation_bandwidth",
+        "energy_mean": -0.057152709917563375,
+        "energy_std": -0.07742919985454805,
+        "energy_range": -0.06559292122087819,
+        "max_abs_rho": 0.07742919985454805
+      },
+      {
+        "feature": "f010_h5_modulation_dominant_freq",
+        "energy_mean": -0.014009057136373166,
+        "energy_std": -0.06246433050447413,
+        "energy_range": -0.07536151127021112,
+        "max_abs_rho": 0.07536151127021112
+      },
+      {
+        "feature": "f010_h1_modulation_centroid",
+        "energy_mean": 0.07224122198896167,
+        "energy_std": 0.016213906231584814,
+        "energy_range": 0.030136016833244742,
+        "max_abs_rho": 0.07224122198896167
+      },
+      {
+        "feature": "f010_modulation_dominant_freq_mean",
+        "energy_mean": 0.013402227515878802,
+        "energy_std": -0.05624690552247733,
+        "energy_range": -0.06815914606372662,
+        "max_abs_rho": 0.06815914606372662
+      },
+      {
+        "feature": "f010_h1_modulation_dominant_freq",
+        "energy_mean": -0.006413540745174126,
+        "energy_std": -0.05506902543625872,
+        "energy_range": -0.05999194219751492,
+        "max_abs_rho": 0.05999194219751492
+      },
+      {
+        "feature": "f010_h5_modulation_bandwidth",
+        "energy_mean": -0.029244561567925004,
+        "energy_std": -0.058040898417368016,
+        "energy_range": -0.04469071230575701,
+        "max_abs_rho": 0.058040898417368016
+      },
+      {
+        "feature": "f010_h4_modulation_dominant_freq",
+        "energy_mean": 0.0009368019515175681,
+        "energy_std": -0.04485623447375714,
+        "energy_range": -0.0527933574430375,
+        "max_abs_rho": 0.0527933574430375
+      },
+      {
+        "feature": "f010_h4_modulation_centroid",
+        "energy_mean": -0.021585544540729727,
+        "energy_std": -0.04858500292237759,
+        "energy_range": -0.04140848322590252,
+        "max_abs_rho": 0.04858500292237759
+      },
+      {
+        "feature": "f010_h3_modulation_dominant_freq",
+        "energy_mean": 0.04509619300968845,
+        "energy_std": -0.0031190822470686117,
+        "energy_range": -0.014976728048282331,
+        "max_abs_rho": 0.04509619300968845
+      },
+      {
+        "feature": "f010_modulation_low_rate_ratio_mean",
+        "energy_mean": -0.0369995786440999,
+        "energy_std": 0.007315774869564439,
+        "energy_range": -0.007542003847961148,
+        "max_abs_rho": 0.0369995786440999
+      },
+      {
+        "feature": "f010_h5_modulation_centroid",
+        "energy_mean": 0.0008701185197397697,
+        "energy_std": -0.033584754744408404,
+        "energy_range": -0.02233172713717857,
+        "max_abs_rho": 0.033584754744408404
+      },
+      {
+        "feature": "f010_h2_modulation_centroid",
+        "energy_mean": 0.03302548623749298,
+        "energy_std": -0.019570842346639687,
+        "energy_range": -0.008281259327173128,
+        "max_abs_rho": 0.03302548623749298
+      },
+      {
+        "feature": "f010_h2_modulation_dominant_freq",
+        "energy_mean": 0.0288818131632893,
+        "energy_std": -0.024479438972374926,
+        "energy_range": -0.027829371929402307,
+        "max_abs_rho": 0.0288818131632893
+      },
+      {
+        "feature": "f010_h2_modulation_bandwidth",
+        "energy_mean": 0.026546663689988762,
+        "energy_std": -0.015584107076439474,
+        "energy_range": -0.0033326256070247266,
+        "max_abs_rho": 0.026546663689988762
+      },
+      {
+        "feature": "f010_h3_modulation_bandwidth",
+        "energy_mean": 0.02570389503843042,
+        "energy_std": -0.0023352081885172978,
+        "energy_range": 0.009575327042805344,
+        "max_abs_rho": 0.02570389503843042
+      },
+      {
+        "feature": "f010_h3_modulation_centroid",
+        "energy_mean": 0.017370533643858276,
+        "energy_std": -0.01803447858901969,
+        "energy_range": -0.011478928597121005,
+        "max_abs_rho": 0.01803447858901969
+      }
+    ],
+    "n_strong_proxy": 10
+  },
+  "generic_vs_harmonic_specific": {
+    "generic_envelope": {
+      "baseline_f1_per_fold": [
+        0.2395654213709472,
+        0.2415145910279663,
+        0.2223097356139399,
+        0.264973689228529,
+        0.25150368389729777
+      ],
+      "combined_f1_per_fold": [
+        0.26309368009575534,
+        0.25365973961430177,
+        0.22821784637426035,
+        0.26247281361674507,
+        0.23096001874061006
+      ],
+      "delta_per_fold": [
+        0.023528258724808154,
+        0.012145148586335475,
+        0.00590811076032044,
+        -0.002500875611783915,
+        -0.020543665156687707
+      ],
+      "baseline_f1_mean": 0.24397342422773605,
+      "baseline_f1_std": 0.014089057420848464,
+      "combined_f1_mean": 0.24768081968833452,
+      "combined_f1_std": 0.01516904313630685,
+      "delta_mean": 0.0037073954605984895,
+      "delta_std": 0.014802445858379488,
+      "delta_median": 0.00590811076032044,
+      "n_folds_improved": 3,
+      "n_folds": 5
+    },
+    "f010_all": {
+      "baseline_f1_per_fold": [
+        0.2395654213709472,
+        0.2415145910279663,
+        0.2223097356139399,
+        0.264973689228529,
+        0.25150368389729777
+      ],
+      "combined_f1_per_fold": [
+        0.27373141828040065,
+        0.25747978184425885,
+        0.270483586634305,
+        0.2513225708434435,
+        0.23468386479860173
+      ],
+      "delta_per_fold": [
+        0.03416599690945346,
+        0.01596519081629255,
+        0.04817385102036509,
+        -0.013651118385085481,
+        -0.016819819098696037
+      ],
+      "baseline_f1_mean": 0.24397342422773605,
+      "baseline_f1_std": 0.014089057420848464,
+      "combined_f1_mean": 0.25754024448020196,
+      "combined_f1_std": 0.014076657475974011,
+      "delta_mean": 0.013566820252465916,
+      "delta_std": 0.025658873216151283,
+      "delta_median": 0.01596519081629255,
+      "n_folds_improved": 3,
+      "n_folds": 5
+    },
+    "f010_h1_only": {
+      "baseline_f1_per_fold": [
+        0.2395654213709472,
+        0.2415145910279663,
+        0.2223097356139399,
+        0.264973689228529,
+        0.25150368389729777
+      ],
+      "combined_f1_per_fold": [
+        0.2939377150175416,
+        0.258017016712977,
+        0.26261631628654675,
+        0.29273480549808545,
+        0.25060518570503204
+      ],
+      "delta_per_fold": [
+        0.05437229364659443,
+        0.016502425685010702,
+        0.04030658067260684,
+        0.027761116269556463,
+        -0.0008984981922657287
+      ],
+      "baseline_f1_mean": 0.24397342422773605,
+      "baseline_f1_std": 0.014089057420848464,
+      "combined_f1_mean": 0.2715822078440365,
+      "combined_f1_std": 0.018174917706343767,
+      "delta_mean": 0.027608783616300543,
+      "delta_std": 0.01904499423508954,
+      "delta_median": 0.027761116269556463,
+      "n_folds_improved": 4,
+      "n_folds": 5
+    },
+    "h1_cols": [
+      "f010_h1_modulation_bandwidth",
+      "f010_h1_modulation_centroid",
+      "f010_h1_modulation_dominant_freq",
+      "f010_h1_modulation_entropy",
+      "f010_h1_modulation_high_rate_energy",
+      "f010_h1_modulation_low_rate_energy"
+    ]
+  },
+  "harmonic_order": {
+    "H1": {
+      "top_feature": "f010_h1_modulation_entropy",
+      "top_epsilon_sq": 0.040910441294441234,
+      "all_features": [
+        [
+          "f010_h1_modulation_entropy",
+          0.040910441294441234
+        ],
+        [
+          "f010_h1_modulation_centroid",
+          0.01546976617123929
+        ],
+        [
+          "f010_h1_modulation_bandwidth",
+          0.006528088021280121
+        ],
+        [
+          "f010_h1_modulation_dominant_freq",
+          0.004284680764821064
+        ],
+        [
+          "f010_h1_modulation_low_rate_energy",
+          0.000832134451921074
+        ],
+        [
+          "f010_h1_modulation_high_rate_energy",
+          0.0007461801864277691
+        ]
+      ]
+    },
+    "H2": {
+      "top_feature": "f010_h2_modulation_entropy",
+      "top_epsilon_sq": 0.039692993965148984,
+      "all_features": [
+        [
+          "f010_h2_modulation_entropy",
+          0.039692993965148984
+        ],
+        [
+          "f010_h2_modulation_centroid",
+          0.019127776363791923
+        ],
+        [
+          "f010_h2_modulation_dominant_freq",
+          0.015545278000632308
+        ],
+        [
+          "f010_h2_modulation_bandwidth",
+          0.01120477289212324
+        ],
+        [
+          "f010_h2_modulation_low_rate_energy",
+          0.009407375952435843
+        ],
+        [
+          "f010_h2_modulation_high_rate_energy",
+          0.006994507388140443
+        ]
+      ]
+    },
+    "H3": {
+      "top_feature": "f010_h3_modulation_entropy",
+      "top_epsilon_sq": 0.02779136006914812,
+      "all_features": [
+        [
+          "f010_h3_modulation_entropy",
+          0.02779136006914812
+        ],
+        [
+          "f010_h3_modulation_low_rate_energy",
+          0.014864518589978105
+        ],
+        [
+          "f010_h3_modulation_high_rate_energy",
+          0.013036935145508412
+        ],
+        [
+          "f010_h3_modulation_centroid",
+          0.007787353627816312
+        ],
+        [
+          "f010_h3_modulation_bandwidth",
+          0.0052523014934829715
+        ],
+        [
+          "f010_h3_modulation_dominant_freq",
+          0.0015192283311902944
+        ]
+      ]
+    },
+    "H4": {
+      "top_feature": "f010_h4_modulation_entropy",
+      "top_epsilon_sq": 0.022036704740325395,
+      "all_features": [
+        [
+          "f010_h4_modulation_entropy",
+          0.022036704740325395
+        ],
+        [
+          "f010_h4_modulation_low_rate_energy",
+          0.019110857965042916
+        ],
+        [
+          "f010_h4_modulation_bandwidth",
+          0.018585176461338424
+        ],
+        [
+          "f010_h4_modulation_centroid",
+          0.01759046862156739
+        ],
+        [
+          "f010_h4_modulation_high_rate_energy",
+          0.01590982153699926
+        ],
+        [
+          "f010_h4_modulation_dominant_freq",
+          0.0024625209587802776
+        ]
+      ]
+    },
+    "H5": {
+      "top_feature": "f010_h5_modulation_entropy",
+      "top_epsilon_sq": 0.033271306363570216,
+      "all_features": [
+        [
+          "f010_h5_modulation_entropy",
+          0.033271306363570216
+        ],
+        [
+          "f010_h5_modulation_centroid",
+          0.018756319024656347
+        ],
+        [
+          "f010_h5_modulation_bandwidth",
+          0.017061615774541863
+        ],
+        [
+          "f010_h5_modulation_low_rate_energy",
+          0.016704142396200914
+        ],
+        [
+          "f010_h5_modulation_high_rate_energy",
+          0.014158386917764042
+        ],
+        [
+          "f010_h5_modulation_dominant_freq",
+          0.00378470855636762
+        ]
+      ]
+    }
+  },
+  "modulation_rate": {
+    "slow_edge_hz": 0.3452243958573146,
+    "fast_edge_hz": 0.8720930232558132,
+    "band_distribution_by_emotion": {
+      "H1": {
+        "angry": {
+          "slow": 0.43,
+          "medium": 0.365,
+          "fast": 0.205
+        },
+        "disgust": {
+          "slow": 0.39,
+          "medium": 0.36,
+          "fast": 0.25
+        },
+        "fear": {
+          "slow": 0.47,
+          "medium": 0.335,
+          "fast": 0.195
+        },
+        "happiness": {
+          "slow": 0.395,
+          "medium": 0.315,
+          "fast": 0.29
+        },
+        "neutral": {
+          "medium": 0.38,
+          "slow": 0.38,
+          "fast": 0.24
+        },
+        "sadness": {
+          "slow": 0.46,
+          "medium": 0.325,
+          "fast": 0.215
+        },
+        "surprise": {
+          "medium": 0.345,
+          "fast": 0.33,
+          "slow": 0.32,
+          "none": 0.005
+        }
+      },
+      "H2": {
+        "angry": {
+          "slow": 0.41,
+          "medium": 0.33,
+          "fast": 0.26
+        },
+        "disgust": {
+          "medium": 0.35,
+          "slow": 0.35,
+          "fast": 0.3
+        },
+        "fear": {
+          "slow": 0.395,
+          "medium": 0.345,
+          "fast": 0.26
+        },
+        "happiness": {
+          "fast": 0.38,
+          "medium": 0.35,
+          "slow": 0.27
+        },
+        "neutral": {
+          "slow": 0.41,
+          "medium": 0.32,
+          "fast": 0.27
+        },
+        "sadness": {
+          "slow": 0.45,
+          "medium": 0.34,
+          "fast": 0.21
+        },
+        "surprise": {
+          "medium": 0.385,
+          "fast": 0.33,
+          "slow": 0.285
+        }
+      },
+      "H3": {
+        "angry": {
+          "fast": 0.375,
+          "medium": 0.325,
+          "slow": 0.3
+        },
+        "disgust": {
+          "slow": 0.335,
+          "medium": 0.335,
+          "fast": 0.33
+        },
+        "fear": {
+          "fast": 0.355,
+          "medium": 0.335,
+          "slow": 0.305,
+          "none": 0.005
+        },
+        "happiness": {
+          "fast": 0.42,
+          "medium": 0.345,
+          "slow": 0.23,
+          "none": 0.005
+        },
+        "neutral": {
+          "fast": 0.345,
+          "slow": 0.335,
+          "medium": 0.32
+        },
+        "sadness": {
+          "medium": 0.37,
+          "fast": 0.325,
+          "slow": 0.305
+        },
+        "surprise": {
+          "medium": 0.38,
+          "fast": 0.355,
+          "slow": 0.265
+        }
+      },
+      "H4": {
+        "angry": {
+          "fast": 0.41,
+          "medium": 0.32,
+          "slow": 0.27
+        },
+        "disgust": {
+          "fast": 0.38,
+          "medium": 0.315,
+          "slow": 0.305
+        },
+        "fear": {
+          "fast": 0.345,
+          "medium": 0.325,
+          "slow": 0.325,
+          "none": 0.005
+        },
+        "happiness": {
+          "fast": 0.425,
+          "medium": 0.325,
+          "slow": 0.245,
+          "none": 0.005
+        },
+        "neutral": {
+          "fast": 0.355,
+          "slow": 0.335,
+          "medium": 0.31
+        },
+        "sadness": {
+          "medium": 0.345,
+          "fast": 0.335,
+          "slow": 0.32
+        },
+        "surprise": {
+          "fast": 0.425,
+          "medium": 0.33,
+          "slow": 0.245
+        }
+      },
+      "H5": {
+        "angry": {
+          "medium": 0.365,
+          "fast": 0.34,
+          "slow": 0.29,
+          "none": 0.005
+        },
+        "disgust": {
+          "fast": 0.365,
+          "medium": 0.32,
+          "slow": 0.315
+        },
+        "fear": {
+          "medium": 0.36,
+          "fast": 0.34,
+          "slow": 0.3
+        },
+        "happiness": {
+          "fast": 0.465,
+          "medium": 0.27,
+          "slow": 0.26,
+          "none": 0.005
+        },
+        "neutral": {
+          "medium": 0.335,
+          "slow": 0.335,
+          "fast": 0.33
+        },
+        "sadness": {
+          "fast": 0.35,
+          "medium": 0.345,
+          "slow": 0.305
+        },
+        "surprise": {
+          "fast": 0.445,
+          "medium": 0.355,
+          "slow": 0.19,
+          "none": 0.01
+        }
+      }
+    }
+  },
+  "partial_association": {
+    "f010_inter_harmonic_modulation_coherence": {
+      "raw_epsilon_sq": 0.050099613173150905,
+      "controlled_epsilon_sq": 0.018161153624609787,
+      "controlled_p": 2.2230172434721472e-05
+    },
+    "f010_h1_modulation_entropy": {
+      "raw_epsilon_sq": 0.040910441294441234,
+      "controlled_epsilon_sq": 0.03133674516883699,
+      "controlled_p": 5.519794394997592e-09
+    },
+    "f010_h2_modulation_entropy": {
+      "raw_epsilon_sq": 0.039692993965148984,
+      "controlled_epsilon_sq": 0.02935607192980997,
+      "controlled_p": 1.9653606901122243e-08
+    },
+    "f010_h5_modulation_entropy": {
+      "raw_epsilon_sq": 0.033271306363570216,
+      "controlled_epsilon_sq": 0.029465582292444153,
+      "controlled_p": 1.832391235579511e-08
+    },
+    "f010_h3_modulation_entropy": {
+      "raw_epsilon_sq": 0.02779136006914812,
+      "controlled_epsilon_sq": 0.023554025381902734,
+      "controlled_p": 7.795647939430959e-07
+    }
+  }
+}

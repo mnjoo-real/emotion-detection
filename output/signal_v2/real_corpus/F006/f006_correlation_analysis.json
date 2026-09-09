@@ -1,0 +1,64 @@
+{
+  "corr_with_f0_motion": {
+    "legacy (existing_repo, real re-extraction)": {
+      "spearman_r": 0.2584478490623137,
+      "p_value": 8.44059759056275e-23
+    },
+    "praat": {
+      "spearman_r": 0.05572167420202037,
+      "p_value": 0.0370991216962735
+    },
+    "conventional (this pilot's own reimplementation)": {
+      "spearman_r": 0.2223759574804448,
+      "p_value": 3.805490251713561e-17
+    },
+    "residual (glide-aware)": {
+      "spearman_r": 0.2309659939330873,
+      "p_value": 2.0804070650600118e-18
+    }
+  },
+  "emotion_association_pooled": {
+    "legacy (existing_repo, real re-extraction)": {
+      "epsilon_sq": 0.005248360493197532,
+      "p_value": 0.03835513135556955,
+      "effect_label": "무시할 수준"
+    },
+    "praat": {
+      "epsilon_sq": 0.006507930071192018,
+      "p_value": 0.01975299079747727,
+      "effect_label": "무시할 수준"
+    },
+    "conventional (this pilot's own reimplementation)": {
+      "epsilon_sq": 0.0049759568721555745,
+      "p_value": 0.04413659210085342,
+      "effect_label": "무시할 수준"
+    },
+    "residual (glide-aware)": {
+      "epsilon_sq": 0.0050105803676426305,
+      "p_value": 0.043358832541388254,
+      "effect_label": "무시할 수준"
+    }
+  },
+  "partial_emotion_association": {
+    "legacy (existing_repo, real re-extraction)": {
+      "epsilon_sq_after_controlling": 0.004394680960630762,
+      "p_value": 0.059306308495625404,
+      "effect_label": "무시할 수준"
+    },
+    "praat": {
+      "epsilon_sq_after_controlling": 0.004774651389183607,
+      "p_value": 0.048923680258417146,
+      "effect_label": "무시할 수준"
+    },
+    "conventional (this pilot's own reimplementation)": {
+      "epsilon_sq_after_controlling": 0.0033504186140678113,
+      "p_value": 0.09922518084494143,
+      "effect_label": "무시할 수준"
+    },
+    "residual (glide-aware)": {
+      "epsilon_sq_after_controlling": 0.0031256667904475716,
+      "p_value": 0.11051223104084697,
+      "effect_label": "무시할 수준"
+    }
+  }
+}

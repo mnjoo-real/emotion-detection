@@ -1,0 +1,12 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f008_n_voiced_frames,majority_vote,0.056158172460604644,5.732600804071044e-15,79.00562419878604,중간,neutral,angry
+f008_mid_band_periodicity_std,majority_vote,0.04227387823500731,2.8773099205318474e-11,60.956041705509506,중간,sadness,happiness
+f008_mvf_std,majority_vote,0.041534327736241654,4.512345497075767e-11,59.99462605711415,중간,sadness,happiness
+f008_high_band_periodicity_std,majority_vote,0.03725905773055519,6.022598983963869e-10,54.436775049721746,작음,neutral,happiness
+f008_aperiodicity_spectral_slope_mean,majority_vote,0.03677819246833434,8.051294284643851e-10,53.811650208834635,작음,disgust,sadness
+f008_voiced_to_aperiodic_transition_rate,majority_vote,0.03546212408538965,1.7798086527241997e-09,52.10076131100654,작음,sadness,happiness
+f008_low_band_periodicity_std,majority_vote,0.03318656028664743,6.981899879054988e-09,49.142528372641664,작음,sadness,disgust
+f008_low_band_periodicity_mean,majority_vote,0.032809520080235625,8.750985860390157e-09,48.65237610430631,작음,surprise,sadness
+f008_high_band_periodicity_mean,majority_vote,0.0292427538434913,7.339689730515192e-08,44.01557999653869,작음,fear,happiness
+f008_mvf_mean,majority_vote,0.02320036597943027,2.565554993129601e-06,36.16047577325935,작음,neutral,happiness
+f008_mid_band_periodicity_mean,majority_vote,0.020506606090423072,1.2197006644869264e-05,32.658587917549994,작음,surprise,happiness

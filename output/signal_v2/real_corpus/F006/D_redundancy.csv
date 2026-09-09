@@ -1,0 +1,7 @@
+﻿new_feature,max_abs_rho,most_correlated_existing,most_correlated_existing_rho,top5_correlated_existing
+f006_conv_jitter,0.8362271832062889,jitter_local,0.8362271832062889,jitter_local=0.836; hnr_mean=-0.609; shimmer_local=0.374; spectral_flux_std=-0.362; total_pause_ratio=0.360
+f006_conv_shimmer,0.5666783445151904,shimmer_local,0.5666783445151904,shimmer_local=0.567; hnr_mean=-0.421; jitter_local=0.404; avg_n_peaks=0.278; pitch_median=-0.264
+f006_f0_motion_energy,0.894247877531716,interval_abs_std,0.894247877531716,interval_abs_std=0.894; interval_abs_mean=0.829; hist_large_fall=0.767; hist_large_rise=0.733; pct_leap=0.654
+f006_n_cycles,0.999995941680865,n_periods,0.999995941680865,n_periods=1.000; n_frames=0.776; n_valid_formant_frames=0.776; n_valid_frames=0.776; n_notes=0.762
+f006_resid_jitter,0.8350737088568486,jitter_local,0.8350737088568486,jitter_local=0.835; hnr_mean=-0.607; shimmer_local=0.372; spectral_flux_std=-0.360; pitch_mean_gender_z=-0.360
+f006_resid_shimmer,0.5023073816437079,shimmer_local,0.5023073816437079,shimmer_local=0.502; jitter_local=0.420; hnr_mean=-0.409; note_interval_semitone_std=0.262; pitch_std_gender_z=0.257

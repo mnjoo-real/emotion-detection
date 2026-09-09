@@ -1,0 +1,110 @@
+{
+  "family": "F007",
+  "n_features": 31,
+  "feature_cols": [
+    "f007_dominant_scale_period_sec",
+    "f007_microprosody_energy",
+    "f007_microprosody_energy_ratio",
+    "f007_microprosody_entropy",
+    "f007_microprosody_peak_density",
+    "f007_microprosody_sign_change_rate",
+    "f007_microprosody_variance",
+    "f007_phrase_energy",
+    "f007_phrase_energy_ratio",
+    "f007_phrase_entropy",
+    "f007_phrase_peak_density",
+    "f007_phrase_sign_change_rate",
+    "f007_phrase_variance",
+    "f007_syllable_energy",
+    "f007_syllable_energy_ratio",
+    "f007_syllable_entropy",
+    "f007_syllable_peak_density",
+    "f007_syllable_sign_change_rate",
+    "f007_syllable_variance",
+    "f007_utterance_energy",
+    "f007_utterance_energy_ratio",
+    "f007_utterance_entropy",
+    "f007_utterance_peak_density",
+    "f007_utterance_sign_change_rate",
+    "f007_utterance_variance",
+    "f007_word_energy",
+    "f007_word_energy_ratio",
+    "f007_word_entropy",
+    "f007_word_peak_density",
+    "f007_word_sign_change_rate",
+    "f007_word_variance"
+  ],
+  "n_constant": 0,
+  "n_high_nan": 0,
+  "top_situation_feature": "f007_syllable_entropy",
+  "top_situation_eps2": 0.022758839998180944,
+  "type_counts": {
+    "B_gender_dependent": 19,
+    "D_no_effect_anywhere": 12
+  },
+  "n_high_redundancy": 4,
+  "classifier_situation": {
+    "baseline_f1_per_fold": [
+      0.2395654213709472,
+      0.2415145910279663,
+      0.2223097356139399,
+      0.264973689228529,
+      0.25150368389729777
+    ],
+    "combined_f1_per_fold": [
+      0.2622783970368408,
+      0.23089710494994012,
+      0.23199946297213417,
+      0.24881944152296,
+      0.23916355192215527
+    ],
+    "delta_per_fold": [
+      0.022712975665893614,
+      -0.010617486078026178,
+      0.009689727358194261,
+      -0.016154247705568975,
+      -0.012340131975142499
+    ],
+    "baseline_f1_mean": 0.24397342422773605,
+    "baseline_f1_std": 0.014089057420848464,
+    "combined_f1_mean": 0.24263159168080609,
+    "combined_f1_std": 0.011722236014081755,
+    "delta_mean": -0.0013418325469299552,
+    "delta_std": 0.015011576157549252,
+    "delta_median": -0.010617486078026178,
+    "n_folds_improved": 2,
+    "n_folds": 5
+  },
+  "classifier_majority_vote": {
+    "baseline_f1_per_fold": [
+      0.29052633865290867,
+      0.2847096350251533,
+      0.3007653949692353,
+      0.29540969889665447,
+      0.300333371189153
+    ],
+    "combined_f1_per_fold": [
+      0.26188175832657334,
+      0.26472804384022314,
+      0.27706465547343834,
+      0.2706177652805644,
+      0.2727504156163527
+    ],
+    "delta_per_fold": [
+      -0.028644580326335323,
+      -0.019981591184930148,
+      -0.023700739495796985,
+      -0.024791933616090056,
+      -0.027582955572800272
+    ],
+    "baseline_f1_mean": 0.29434888774662094,
+    "baseline_f1_std": 0.006093242189672101,
+    "combined_f1_mean": 0.2694085277074304,
+    "combined_f1_std": 0.005473681562117268,
+    "delta_mean": -0.024940360039190555,
+    "delta_std": 0.0030611317232229567,
+    "delta_median": -0.024791933616090056,
+    "n_folds_improved": 0,
+    "n_folds": 5
+  }
+}

@@ -1,0 +1,12 @@
+﻿new_feature,max_abs_rho,most_correlated_existing,most_correlated_existing_rho,top5_correlated_existing
+f008_aperiodicity_spectral_slope_mean,0.6993587037544408,mfcc_3_mean,0.6993587037544408,mfcc_3_mean=0.699; zcr_mean=-0.688; spectral_centroid_mean=-0.665; mfcc_2_mean=0.660; spectral_rolloff_mean=-0.579
+f008_high_band_periodicity_mean,0.5814234045163144,arousal,0.5814234045163144,arousal=0.581; dominance=0.569; mfcc_3_std=0.497; mfcc_10_std=0.493; mfcc_1_std=0.429
+f008_high_band_periodicity_std,0.6571555787236919,arousal,0.6571555787236919,arousal=0.657; dominance=0.632; mfcc_3_mean=-0.596; mfcc_3_std=0.552; pitch_mean=0.549
+f008_low_band_periodicity_mean,0.6994459530700928,zcr_mean,-0.6994459530700928,zcr_mean=-0.699; spectral_centroid_mean=-0.674; mfcc_2_mean=0.644; mfcc_3_mean=0.615; spectral_rolloff_mean=-0.591
+f008_low_band_periodicity_std,0.7006277393873307,zcr_mean,0.7006277393873307,zcr_mean=0.701; spectral_centroid_mean=0.675; mfcc_2_mean=-0.646; mfcc_3_mean=-0.622; spectral_rolloff_mean=0.592
+f008_mid_band_periodicity_mean,0.38911406587452346,partial_roughness_mean,-0.38911406587452346,partial_roughness_mean=-0.389; arousal=0.378; dominance=0.375; mfcc_4_mean=-0.375; mfcc_7_std=0.353
+f008_mid_band_periodicity_std,0.7236946636926128,mfcc_3_mean,-0.7236946636926128,mfcc_3_mean=-0.724; mfcc_2_mean=-0.638; zcr_mean=0.629; spectral_centroid_mean=0.608; spectral_rolloff_mean=0.521
+f008_mvf_mean,0.4427848716832436,arousal,0.4427848716832436,arousal=0.443; dominance=0.435; mfcc_3_std=0.382; mfcc_10_std=0.368; partial_roughness_mean=-0.363
+f008_mvf_std,0.7153887002712029,mfcc_3_mean,-0.7153887002712029,mfcc_3_mean=-0.715; mfcc_2_mean=-0.592; zcr_mean=0.566; arousal=0.549; spectral_centroid_mean=0.549
+f008_n_voiced_frames,0.8622931584139114,n_valid_formant_frames,0.8622931584139114,n_valid_formant_frames=0.862; n_valid_frames=0.862; n_frames=0.862; n_notes=0.825; n_periods=0.811
+f008_voiced_to_aperiodic_transition_rate,0.6507187071407895,arousal,0.6507187071407895,arousal=0.651; mfcc_3_mean=-0.644; dominance=0.624; pitch_mean=0.546; mfcc_10_std=0.515

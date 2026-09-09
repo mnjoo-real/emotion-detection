@@ -1,0 +1,91 @@
+{
+  "family": "F009",
+  "n_features": 11,
+  "feature_cols": [
+    "f009_cross_harmonic_coherence_mean",
+    "f009_h2_phase_circular_variance",
+    "f009_h2_phase_resultant_length",
+    "f009_h3_phase_circular_variance",
+    "f009_h3_phase_resultant_length",
+    "f009_h4_phase_circular_variance",
+    "f009_h4_phase_resultant_length",
+    "f009_h5_phase_circular_variance",
+    "f009_h5_phase_resultant_length",
+    "f009_mean_phase_coherence",
+    "f009_temporal_phase_instability"
+  ],
+  "n_constant": 0,
+  "n_high_nan": 0,
+  "top_situation_feature": "f009_h3_phase_circular_variance",
+  "top_situation_eps2": 0.014386113454129528,
+  "type_counts": {
+    "A_robust": 5,
+    "B_gender_dependent": 4,
+    "D_no_effect_anywhere": 2
+  },
+  "n_high_redundancy": 0,
+  "classifier_situation": {
+    "baseline_f1_per_fold": [
+      0.2395654213709472,
+      0.2415145910279663,
+      0.2223097356139399,
+      0.264973689228529,
+      0.25150368389729777
+    ],
+    "combined_f1_per_fold": [
+      0.2698162016129203,
+      0.24082940171867143,
+      0.23610234037396058,
+      0.21493581661840905,
+      0.2683669231430494
+    ],
+    "delta_per_fold": [
+      0.030250780241973113,
+      -0.0006851893092948702,
+      0.013792604760020671,
+      -0.05003787261011994,
+      0.016863239245751616
+    ],
+    "baseline_f1_mean": 0.24397342422773605,
+    "baseline_f1_std": 0.014089057420848464,
+    "combined_f1_mean": 0.24601013669340216,
+    "combined_f1_std": 0.020771001122798585,
+    "delta_mean": 0.0020367124656661185,
+    "delta_std": 0.027832469098414237,
+    "delta_median": 0.013792604760020671,
+    "n_folds_improved": 3,
+    "n_folds": 5
+  },
+  "classifier_majority_vote": {
+    "baseline_f1_per_fold": [
+      0.29052633865290867,
+      0.2847096350251533,
+      0.3007653949692353,
+      0.29540969889665447,
+      0.300333371189153
+    ],
+    "combined_f1_per_fold": [
+      0.263749240289597,
+      0.26890272980006963,
+      0.26190569335421443,
+      0.32664198292042057,
+      0.2820043598071163
+    ],
+    "delta_per_fold": [
+      -0.026777098363311658,
+      -0.015806905225083656,
+      -0.03885970161502089,
+      0.0312322840237661,
+      -0.018329011382036686
+    ],
+    "baseline_f1_mean": 0.29434888774662094,
+    "baseline_f1_std": 0.006093242189672101,
+    "combined_f1_mean": 0.28064080123428353,
+    "combined_f1_std": 0.024050278284972627,
+    "delta_mean": -0.013708086512337358,
+    "delta_std": 0.023869636375936275,
+    "delta_median": -0.018329011382036686,
+    "n_folds_improved": 1,
+    "n_folds": 5
+  }
+}

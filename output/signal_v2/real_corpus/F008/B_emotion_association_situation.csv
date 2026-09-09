@@ -1,0 +1,12 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f008_mid_band_periodicity_std,situation,0.03317048512237381,1.6947630258218347e-09,52.20648577546672,작음,sadness,happiness
+f008_low_band_periodicity_mean,situation,0.031214497431438077,5.9708626463725965e-09,49.48179492199324,작음,surprise,sadness
+f008_low_band_periodicity_std,situation,0.03120242184571449,6.017364981278885e-09,49.464973631080284,작음,sadness,surprise
+f008_aperiodicity_spectral_slope_mean,situation,0.030593410789471597,8.896284588995343e-09,48.61662122973394,작음,surprise,sadness
+f008_mvf_std,situation,0.02944940056661392,1.8514599604078982e-08,47.02301498929319,작음,fear,happiness
+f008_voiced_to_aperiodic_transition_rate,situation,0.02688892169018828,9.473900149631308e-08,43.456267914432274,작음,fear,happiness
+f008_n_voiced_frames,situation,0.022889432170090866,1.1830435152419822e-06,37.884979012936576,작음,sadness,surprise
+f008_high_band_periodicity_std,situation,0.021596349839043162,2.655250547553112e-06,36.083715325787125,작음,fear,happiness
+f008_mid_band_periodicity_mean,situation,0.013509334154933397,0.0003689082385770737,24.81850247782222,작음,surprise,angry
+f008_high_band_periodicity_mean,situation,0.013433705739728448,0.000385829213933667,24.71315209544173,작음,fear,disgust
+f008_mvf_mean,situation,0.008627353610247817,0.0061876086050202325,18.01790357907521,무시할 수준,surprise,disgust

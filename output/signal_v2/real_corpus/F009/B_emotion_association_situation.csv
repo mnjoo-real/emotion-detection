@@ -1,0 +1,12 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f009_h3_phase_circular_variance,situation,0.014386113454129528,0.00021886815156162728,26.039856041602434,작음,sadness,surprise
+f009_h3_phase_resultant_length,situation,0.014386113454129528,0.00021886815156162728,26.039856041602434,작음,surprise,sadness
+f009_mean_phase_coherence,situation,0.01326858924259008,0.00042547262451352193,24.483144814927982,작음,surprise,sadness
+f009_h4_phase_circular_variance,situation,0.012744428738105442,0.0005798033027279907,23.75298923218088,작음,sadness,surprise
+f009_h4_phase_resultant_length,situation,0.012744428738105442,0.0005798033027279907,23.75298923218088,작음,surprise,sadness
+f009_h5_phase_circular_variance,situation,0.007154428129810902,0.013936983925301953,15.966118384826586,무시할 수준,sadness,surprise
+f009_h5_phase_resultant_length,situation,0.007154428129810902,0.013936983925301953,15.966118384826586,무시할 수준,surprise,sadness
+f009_h2_phase_circular_variance,situation,0.004741052287614028,0.04976845916654139,12.60428583664634,무시할 수준,sadness,surprise
+f009_h2_phase_resultant_length,situation,0.004741052287614028,0.04976845916654139,12.60428583664634,무시할 수준,surprise,sadness
+f009_cross_harmonic_coherence_mean,situation,-0.0019836633677505528,0.7785982690329563,3.23675692872348,무시할 수준,angry,disgust
+f009_temporal_phase_instability,situation,-0.0029908683389853197,0.9343383774962783,1.8337204037934498,무시할 수준,happiness,fear

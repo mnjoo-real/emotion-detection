@@ -1,0 +1,20 @@
+{
+  "glottal_flow_correlation_at_best_lag": 0.6930279261723531,
+  "best_lag_samples": -10,
+  "true_formants_hz": [
+    700.0,
+    1220.0,
+    2600.0
+  ],
+  "estimated_formants_hz_median": [
+    810.9027460765151,
+    1238.6058225831848,
+    2614.787884715157
+  ],
+  "formant_abs_error_hz": [
+    110.90274607651509,
+    18.605822583184818,
+    14.787884715156906
+  ],
+  "n_frames": 36
+}

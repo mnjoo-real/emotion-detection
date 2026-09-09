@@ -1,0 +1,34 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f010_inter_harmonic_modulation_coherence,majority_vote,0.0765316022966576,1.7894006766084004e-20,105.49108298565488,중간,surprise,neutral
+f010_h1_modulation_entropy,majority_vote,0.05013145450718359,2.3515188029696605e-13,71.17089085933867,중간,neutral,surprise
+f010_h1_modulation_centroid,majority_vote,0.035261804995501946,2.0078735532711832e-09,51.84034649415253,작음,neutral,surprise
+f010_h2_modulation_entropy,majority_vote,0.030552797043585718,3.368003922489669e-08,45.71863615666143,작음,neutral,surprise
+f010_h2_modulation_dominant_freq,majority_vote,0.02887815324197539,9.11224120305563e-08,43.54159921456801,작음,fear,happiness
+f010_modulation_dominant_freq_mean,majority_vote,0.028637566057668207,1.0509130146248255e-07,43.22883587496867,작음,neutral,happiness
+f010_h5_modulation_entropy,majority_vote,0.02237097373821528,4.154194086815853e-06,35.082265859679865,작음,neutral,surprise
+f010_h2_modulation_centroid,majority_vote,0.02074265613427612,1.0647551743871623e-05,32.96545297455896,작음,sadness,surprise
+f010_h2_modulation_high_rate_energy,majority_vote,0.02067811123625653,1.1050709178774869e-05,32.88154460713349,작음,fear,angry
+f010_h3_modulation_dominant_freq,majority_vote,0.02039080783573229,1.3036884846632799e-05,32.508050186451975,작음,sadness,disgust
+f010_h4_modulation_low_rate_energy,majority_vote,0.019997259099804977,1.6343283194493923e-05,31.99643682974647,작음,fear,angry
+f010_h4_modulation_high_rate_energy,majority_vote,0.0199379177704864,1.6909254410865747e-05,31.91929310163232,작음,fear,angry
+f010_modulation_low_rate_ratio_mean,majority_vote,0.019787693869735938,1.8430345668484753e-05,31.72400203065672,작음,surprise,sadness
+f010_h3_modulation_high_rate_energy,majority_vote,0.01942199047275538,2.272377266418473e-05,31.248587614581993,작음,fear,angry
+f010_h1_modulation_bandwidth,majority_vote,0.01936671653893777,2.3453700544238732e-05,31.1767315006191,작음,neutral,surprise
+f010_h2_modulation_low_rate_energy,majority_vote,0.01883990142091044,3.168662705002765e-05,30.491871847183575,작음,fear,angry
+f010_h4_modulation_entropy,majority_vote,0.01840613933358257,4.0567214551541734e-05,29.92798113365734,작음,neutral,fear
+f010_h3_modulation_entropy,majority_vote,0.018149514811138943,4.693864911327311e-05,29.594369254480625,작음,neutral,angry
+f010_h3_modulation_low_rate_energy,majority_vote,0.01705687876916622,8.713328688554092e-05,28.173942399916086,작음,fear,disgust
+f010_h1_modulation_high_rate_energy,majority_vote,0.01685993315259321,9.736688670529632e-05,27.917913098371173,작음,neutral,surprise
+f010_h4_modulation_bandwidth,majority_vote,0.014988430965208863,0.000277590741532914,25.484960254771522,작음,neutral,fear
+f010_h5_modulation_high_rate_energy,majority_vote,0.01493291786169196,0.0002862887372631427,25.412793220199546,작음,fear,disgust
+f010_h5_modulation_low_rate_energy,majority_vote,0.0147995651369526,0.000308295760955692,25.23943467803838,작음,fear,neutral
+f010_h1_modulation_low_rate_energy,majority_vote,0.013826353939412351,0.0005279821343517752,23.974260121236057,작음,neutral,angry
+f010_h5_modulation_bandwidth,majority_vote,0.013098366702247054,0.0007871955183570183,23.02787671292117,작음,neutral,surprise
+f010_h4_modulation_centroid,majority_vote,0.011309067060221353,0.0020751612963166607,20.70178717828776,작음,sadness,happiness
+f010_h5_modulation_centroid,majority_vote,0.010027660499904063,0.004103333509087531,19.035958649875283,작음,neutral,surprise
+f010_h2_modulation_bandwidth,majority_vote,0.00988084698880392,0.004433390318154772,18.845101085445094,무시할 수준,sadness,fear
+f010_h1_modulation_dominant_freq,majority_vote,0.008573783147624248,0.008761671896352704,17.145918091911522,무시할 수준,fear,surprise
+f010_h5_modulation_dominant_freq,majority_vote,0.00677430876222767,0.021815449499316502,14.80660139089597,무시할 수준,fear,surprise
+f010_h4_modulation_dominant_freq,majority_vote,0.005177169615410504,0.04752406837354268,12.730320500033656,무시할 수준,fear,happiness
+f010_h3_modulation_centroid,majority_vote,0.005154456945392667,0.048041217550299865,12.700794029010467,무시할 수준,sadness,fear
+f010_h3_modulation_bandwidth,majority_vote,-0.0008587049526218274,0.5588159618754969,4.883683561591624,무시할 수준,disgust,fear

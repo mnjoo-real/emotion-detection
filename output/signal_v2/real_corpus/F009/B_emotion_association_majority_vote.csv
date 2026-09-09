@@ -1,0 +1,12 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f009_mean_phase_coherence,majority_vote,0.010728278176657464,0.0028304690092206732,19.946761629654702,작음,surprise,sadness
+f009_h2_phase_circular_variance,majority_vote,0.008962837520759352,0.007164227626389707,17.651688776987157,무시할 수준,sadness,surprise
+f009_h2_phase_resultant_length,majority_vote,0.008962837520759352,0.007164227626389707,17.651688776987157,무시할 수준,surprise,sadness
+f009_h4_phase_circular_variance,majority_vote,0.006007676789136334,0.031832339229020484,13.809979825877235,무시할 수준,neutral,surprise
+f009_h4_phase_resultant_length,majority_vote,0.006007676789136334,0.031832339229020484,13.809979825877235,무시할 수준,surprise,neutral
+f009_h3_phase_circular_variance,majority_vote,0.0058198902492194275,0.034880181120777086,13.565857323985256,무시할 수준,neutral,surprise
+f009_h3_phase_resultant_length,majority_vote,0.0058198902492194275,0.034880181120777086,13.565857323985256,무시할 수준,surprise,neutral
+f009_h5_phase_circular_variance,majority_vote,0.004387899798577844,0.06890085405903117,11.704269738151197,무시할 수준,neutral,fear
+f009_h5_phase_resultant_length,majority_vote,0.004387899798577844,0.06890085405903117,11.704269738151197,무시할 수준,fear,neutral
+f009_cross_harmonic_coherence_mean,majority_vote,0.0016929406740064223,0.22375667675287528,8.200822876208349,무시할 수준,neutral,surprise
+f009_temporal_phase_instability,majority_vote,-0.0025667907276881756,0.8497777859705304,2.663172054005372,무시할 수준,angry,surprise

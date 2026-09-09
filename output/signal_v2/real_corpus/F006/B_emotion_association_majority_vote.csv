@@ -1,0 +1,7 @@
+﻿feature,label,epsilon_sq,p_value,h_stat,effect_label,lowest_group,highest_group
+f006_n_cycles,majority_vote,0.06485554480503421,2.6096679836311998e-17,90.31220824654447,중간,neutral,happiness
+f006_conv_shimmer,majority_vote,0.01943703288985489,2.2529054232796687e-05,31.268142756811358,작음,fear,neutral
+f006_resid_shimmer,majority_vote,0.01054437967422228,0.0031213110989514172,19.707693576488964,작음,fear,neutral
+f006_resid_jitter,majority_vote,0.00576947668082714,0.03574415500601329,13.500319685075283,무시할 수준,fear,neutral
+f006_conv_jitter,majority_vote,0.005572904123543175,0.03930944325631951,13.244775360606127,무시할 수준,fear,neutral
+f006_f0_motion_energy,majority_vote,0.003373878147196172,0.10930830612372733,10.386041591355024,무시할 수준,neutral,happiness

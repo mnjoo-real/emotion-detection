@@ -1,0 +1,137 @@
+{
+  "n_files": 280,
+  "variants": {
+    "raw_roughness_mean": {
+      "situation_effect": {
+        "n": 280,
+        "k": 7,
+        "h_stat": 8.93802491103213,
+        "p_value": 0.17709362453570388,
+        "epsilon_sq": 0.010761996011106703,
+        "effect_label": "작음",
+        "lowest": [
+          "neutral",
+          9.644769639596696e-06
+        ],
+        "highest": [
+          "sadness",
+          3.161901428245033e-05
+        ],
+        "means": {
+          "angry": 9.741797940144005e-06,
+          "sadness": 3.161901428245033e-05,
+          "fear": 2.2649760621385357e-05,
+          "disgust": 2.049739076106039e-05,
+          "neutral": 9.644769639596696e-06,
+          "happiness": 1.922993879753191e-05,
+          "surprise": 1.1377715542095337e-05
+        }
+      },
+      "gender_effect": {
+        "male_mean": 5.1518910342356724e-05,
+        "female_mean": 6.1589132630811355e-06,
+        "gender_epsilon_sq": 0.3166956169529202,
+        "gender_effect_label": "큼",
+        "p_value": 3.866395302070178e-21
+      },
+      "redundancy": {
+        "existing_partial_roughness_mean": {
+          "pearson_r": -0.08633685196279765,
+          "spearman_r": -0.120238231901646
+        },
+        "existing_formant_roughness_mean": {
+          "pearson_r": 0.03636093218761594,
+          "spearman_r": 0.04775571116978533
+        }
+      }
+    },
+    "source_roughness_mean": {
+      "situation_effect": {
+        "n": 280,
+        "k": 7,
+        "h_stat": 3.5147203863751884,
+        "p_value": 0.7420101931907621,
+        "epsilon_sq": -0.009103588328296013,
+        "effect_label": "무시할 수준",
+        "lowest": [
+          "surprise",
+          0.0003088503262962981
+        ],
+        "highest": [
+          "neutral",
+          0.0004204298336053748
+        ],
+        "means": {
+          "angry": 0.00039087095431722597,
+          "sadness": 0.0004064929902405757,
+          "fear": 0.00038330421049268616,
+          "disgust": 0.00031598750718343045,
+          "neutral": 0.0004204298336053748,
+          "happiness": 0.0003991501869667714,
+          "surprise": 0.0003088503262962981
+        }
+      },
+      "gender_effect": {
+        "male_mean": 0.000574557216539333,
+        "female_mean": 0.0003059390421791468,
+        "gender_epsilon_sq": 0.17579458196377487,
+        "gender_effect_label": "큼",
+        "p_value": 1.6420248896230765e-12
+      },
+      "redundancy": {
+        "existing_partial_roughness_mean": {
+          "pearson_r": 0.03492213148408156,
+          "spearman_r": 0.01316835309488277
+        },
+        "existing_formant_roughness_mean": {
+          "pearson_r": -0.16861698221303809,
+          "spearman_r": -0.1868420333349733
+        }
+      }
+    },
+    "source_roughness_norm_mean": {
+      "situation_effect": {
+        "n": 280,
+        "k": 7,
+        "h_stat": 5.63375444839869,
+        "p_value": 0.465440300318415,
+        "epsilon_sq": -0.0013415587970743944,
+        "effect_label": "무시할 수준",
+        "lowest": [
+          "disgust",
+          0.002785556531482515
+        ],
+        "highest": [
+          "sadness",
+          0.004135279369107276
+        ],
+        "means": {
+          "angry": 0.0033376746292006166,
+          "sadness": 0.004135279369107276,
+          "fear": 0.0033718376552763995,
+          "disgust": 0.002785556531482515,
+          "neutral": 0.0033456200098146835,
+          "happiness": 0.003306441873585389,
+          "surprise": 0.0029706128990506127
+        }
+      },
+      "gender_effect": {
+        "male_mean": 0.005846310073506972,
+        "female_mean": 0.0024480124683086434,
+        "gender_epsilon_sq": 0.3101946960088648,
+        "gender_effect_label": "큼",
+        "p_value": 9.640596420465627e-21
+      },
+      "redundancy": {
+        "existing_partial_roughness_mean": {
+          "pearson_r": 0.03627479957975232,
+          "spearman_r": -0.0005275213058475599
+        },
+        "existing_formant_roughness_mean": {
+          "pearson_r": -0.16192133689298496,
+          "spearman_r": -0.16229780627668353
+        }
+      }
+    }
+  }
+}

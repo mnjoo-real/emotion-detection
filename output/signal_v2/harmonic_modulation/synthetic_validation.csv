@@ -1,0 +1,5 @@
+﻿condition,true_mod_rate_hz,recovered_dominant_freq_mean,h3_dominant_freq
+no_modulation,0.0,0.0,0.0
+slow_am_2hz,2.0,2.0202020202020186,2.0202020202020186
+syllabic_am_4hz,4.0,4.040404040404037,4.040404040404037
+fast_am_8hz,8.0,8.080808080808074,8.080808080808074

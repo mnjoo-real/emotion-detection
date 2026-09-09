@@ -1,0 +1,90 @@
+{
+  "family": "F008",
+  "n_features": 11,
+  "feature_cols": [
+    "f008_aperiodicity_spectral_slope_mean",
+    "f008_high_band_periodicity_mean",
+    "f008_high_band_periodicity_std",
+    "f008_low_band_periodicity_mean",
+    "f008_low_band_periodicity_std",
+    "f008_mid_band_periodicity_mean",
+    "f008_mid_band_periodicity_std",
+    "f008_mvf_mean",
+    "f008_mvf_std",
+    "f008_n_voiced_frames",
+    "f008_voiced_to_aperiodic_transition_rate"
+  ],
+  "n_constant": 0,
+  "n_high_nan": 0,
+  "top_situation_feature": "f008_mid_band_periodicity_std",
+  "top_situation_eps2": 0.03317048512237381,
+  "type_counts": {
+    "A_robust": 7,
+    "B_gender_dependent": 4
+  },
+  "n_high_redundancy": 0,
+  "classifier_situation": {
+    "baseline_f1_per_fold": [
+      0.2395654213709472,
+      0.2415145910279663,
+      0.2223097356139399,
+      0.264973689228529,
+      0.25150368389729777
+    ],
+    "combined_f1_per_fold": [
+      0.21834429039805306,
+      0.24053664540366507,
+      0.21874603302064982,
+      0.24365625037893945,
+      0.2619451814789654
+    ],
+    "delta_per_fold": [
+      -0.02122113097289413,
+      -0.0009779456243012297,
+      -0.0035637025932900857,
+      -0.02131743884958953,
+      0.010441497581667625
+    ],
+    "baseline_f1_mean": 0.24397342422773605,
+    "baseline_f1_std": 0.014089057420848464,
+    "combined_f1_mean": 0.23664568013605453,
+    "combined_f1_std": 0.016490547033026923,
+    "delta_mean": -0.00732774409168147,
+    "delta_std": 0.012320484219983689,
+    "delta_median": -0.0035637025932900857,
+    "n_folds_improved": 1,
+    "n_folds": 5
+  },
+  "classifier_majority_vote": {
+    "baseline_f1_per_fold": [
+      0.29052633865290867,
+      0.2847096350251533,
+      0.3007653949692353,
+      0.29540969889665447,
+      0.300333371189153
+    ],
+    "combined_f1_per_fold": [
+      0.2777175943173846,
+      0.2711493292851062,
+      0.30745319787137604,
+      0.28237711870563814,
+      0.3092190666772726
+    ],
+    "delta_per_fold": [
+      -0.012808744335524092,
+      -0.013560305740047074,
+      0.006687802902140716,
+      -0.01303258019101633,
+      0.008885695488119627
+    ],
+    "baseline_f1_mean": 0.29434888774662094,
+    "baseline_f1_std": 0.006093242189672101,
+    "combined_f1_mean": 0.2895832613713555,
+    "combined_f1_std": 0.015731699713899087,
+    "delta_mean": -0.00476562637526543,
+    "delta_std": 0.010275410336078934,
+    "delta_median": -0.012808744335524092,
+    "n_folds_improved": 2,
+    "n_folds": 5
+  }
+}

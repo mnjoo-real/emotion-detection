@@ -1,0 +1,12 @@
+﻿new_feature,max_abs_rho,most_correlated_existing,most_correlated_existing_rho,top5_correlated_existing
+f009_cross_harmonic_coherence_mean,0.23764273786437062,energy_std,0.23764273786437062,energy_std=0.238; f2_f1_ratio=0.238; mfcc_5_mean=0.231; energy_mean=0.226; mfcc_10_mean=-0.204
+f009_h2_phase_circular_variance,0.5302472355488812,jitter_local,0.5302472355488812,jitter_local=0.530; spectral_flux_std=-0.378; pitch_std_gender_z=0.373; total_pause_ratio=0.353; longest_pause_dur=0.309
+f009_h2_phase_resultant_length,0.5302472355488812,jitter_local,-0.5302472355488812,jitter_local=-0.530; spectral_flux_std=0.378; pitch_std_gender_z=-0.373; total_pause_ratio=-0.353; longest_pause_dur=-0.309
+f009_h3_phase_circular_variance,0.3593647212502223,jitter_local,0.3593647212502223,jitter_local=0.359; spectral_flux_std=-0.314; dominance=0.276; arousal=0.269; pitch_std=0.249
+f009_h3_phase_resultant_length,0.3593647212502223,jitter_local,-0.3593647212502223,jitter_local=-0.359; spectral_flux_std=0.314; dominance=-0.276; arousal=-0.269; pitch_std=-0.249
+f009_h4_phase_circular_variance,0.3177113137011076,jitter_local,0.3177113137011076,jitter_local=0.318; spectral_flux_std=-0.277; n_intervals=0.245; n_voiced_pitch_frames=0.244; n_hnr_frames=0.244
+f009_h4_phase_resultant_length,0.3177113137011076,jitter_local,-0.3177113137011076,jitter_local=-0.318; spectral_flux_std=0.277; n_intervals=-0.245; n_voiced_pitch_frames=-0.244; n_hnr_frames=-0.244
+f009_h5_phase_circular_variance,0.3058482238448887,n_voiced_pitch_frames,0.3058482238448887,n_voiced_pitch_frames=0.306; n_hnr_frames=0.306; n_intervals=0.304; n_notes=0.279; n_valid_formant_frames=0.251
+f009_h5_phase_resultant_length,0.3058482238448887,n_voiced_pitch_frames,-0.3058482238448887,n_voiced_pitch_frames=-0.306; n_hnr_frames=-0.306; n_intervals=-0.304; n_notes=-0.279; n_valid_formant_frames=-0.251
+f009_mean_phase_coherence,0.5229735875229674,jitter_local,-0.5229735875229674,jitter_local=-0.523; spectral_flux_std=0.406; pitch_std_gender_z=-0.363; longest_pause_dur=-0.336; pitch_std=-0.321
+f009_temporal_phase_instability,0.21264278487605645,mfcc_5_mean,0.21264278487605645,mfcc_5_mean=0.213; energy_std=0.201; energy_mean=0.199; f2_f1_ratio=0.191; mfcc_1_mean=0.189

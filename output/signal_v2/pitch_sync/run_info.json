@@ -1,0 +1,13 @@
+{
+  "command": "/Users/minjoolee/Downloads/감정 분류를 위한 대화 음성 데이터셋/signal_v2/pitch_sync/benchmark.py",
+  "git_commit": "a3b7e52482c9b0aa53803ea68da258979159cfa2",
+  "modes": [
+    "fixed",
+    "adaptive_c2",
+    "adaptive_c3",
+    "adaptive_c4"
+  ],
+  "fixed_window_sec": 0.04,
+  "n_harmonics": 5,
+  "rolloff": 0.88
+}
